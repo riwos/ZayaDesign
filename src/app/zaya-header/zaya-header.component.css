@@ -1,0 +1,24 @@
+.navbar-default .navbar-brand {
+    color: rgba(195, 191, 10, 1);
+    font-weight: bold;
+}
+
+.navbar-default .navbar-text {
+    color: #000000;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000000;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: rgba(195, 191, 10, 1);
+}
+
+@media (max-width: 767px) {
+    .navbar-nav.pull-right {
+        float: none!important;
+    }
+}
