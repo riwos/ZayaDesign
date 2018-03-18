@@ -34,6 +34,10 @@ npm-debug.log
 testem.log
 /typings
 
+#bin
+obj
+bin
+
 # e2e
 /e2e/*.js
 /e2e/*.map
@@ -41,3 +45,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+obj/ZayaDesign.csproj.nuget.cache
+bin/Debug/netcoreapp2.0/ZayaDesign.dll

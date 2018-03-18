@@ -1,10 +1,21 @@
-C:\Users\Jakub-Lenovo\Desktop\.ZAYA MAGDA\Zaya-Magdalena Nazim-Zurek\ZayaDesign\bin\Debug\netcoreapp2.0\ZayaDesign.deps.json
-C:\Users\Jakub-Lenovo\Desktop\.ZAYA MAGDA\Zaya-Magdalena Nazim-Zurek\ZayaDesign\bin\Debug\netcoreapp2.0\ZayaDesign.runtimeconfig.json
-C:\Users\Jakub-Lenovo\Desktop\.ZAYA MAGDA\Zaya-Magdalena Nazim-Zurek\ZayaDesign\bin\Debug\netcoreapp2.0\ZayaDesign.runtimeconfig.dev.json
-C:\Users\Jakub-Lenovo\Desktop\.ZAYA MAGDA\Zaya-Magdalena Nazim-Zurek\ZayaDesign\bin\Debug\netcoreapp2.0\ZayaDesign.dll
-C:\Users\Jakub-Lenovo\Desktop\.ZAYA MAGDA\Zaya-Magdalena Nazim-Zurek\ZayaDesign\bin\Debug\netcoreapp2.0\ZayaDesign.pdb
-C:\Users\Jakub-Lenovo\Desktop\.ZAYA MAGDA\Zaya-Magdalena Nazim-Zurek\ZayaDesign\obj\Debug\netcoreapp2.0\ZayaDesign.csproj.CoreCompileInputs.cache
-C:\Users\Jakub-Lenovo\Desktop\.ZAYA MAGDA\Zaya-Magdalena Nazim-Zurek\ZayaDesign\obj\Debug\netcoreapp2.0\ZayaDesign.AssemblyInfoInputs.cache
-C:\Users\Jakub-Lenovo\Desktop\.ZAYA MAGDA\Zaya-Magdalena Nazim-Zurek\ZayaDesign\obj\Debug\netcoreapp2.0\ZayaDesign.AssemblyInfo.cs
-C:\Users\Jakub-Lenovo\Desktop\.ZAYA MAGDA\Zaya-Magdalena Nazim-Zurek\ZayaDesign\obj\Debug\netcoreapp2.0\ZayaDesign.dll
-C:\Users\Jakub-Lenovo\Desktop\.ZAYA MAGDA\Zaya-Magdalena Nazim-Zurek\ZayaDesign\obj\Debug\netcoreapp2.0\ZayaDesign.pdb
+C:/Users/Jakub-Lenovo/Desktop/.ZAYA MAGDA/Zaya-Magdalena Nazim-Zurek/ZayaDesign/bin/Debug/netcoreapp2.0/ZayaDesign.deps.json
+C:/Users/Jakub-Lenovo/Desktop/.ZAYA MAGDA/Zaya-Magdalena Nazim-Zurek/ZayaDesign/bin/Debug/netcoreapp2.0/ZayaDesign.runtimeconfig.json
+C:/Users/Jakub-Lenovo/Desktop/.ZAYA MAGDA/Zaya-Magdalena Nazim-Zurek/ZayaDesign/bin/Debug/netcoreapp2.0/ZayaDesign.runtimeconfig.dev.json
+C:/Users/Jakub-Lenovo/Desktop/.ZAYA MAGDA/Zaya-Magdalena Nazim-Zurek/ZayaDesign/bin/Debug/netcoreapp2.0/ZayaDesign.dll
+C:/Users/Jakub-Lenovo/Desktop/.ZAYA MAGDA/Zaya-Magdalena Nazim-Zurek/ZayaDesign/bin/Debug/netcoreapp2.0/ZayaDesign.pdb
+C:/Users/Jakub-Lenovo/Desktop/.ZAYA MAGDA/Zaya-Magdalena Nazim-Zurek/ZayaDesign/obj/Debug/netcoreapp2.0/ZayaDesign.csproj.CoreCompileInputs.cache
+C:/Users/Jakub-Lenovo/Desktop/.ZAYA MAGDA/Zaya-Magdalena Nazim-Zurek/ZayaDesign/obj/Debug/netcoreapp2.0/ZayaDesign.AssemblyInfoInputs.cache
+C:/Users/Jakub-Lenovo/Desktop/.ZAYA MAGDA/Zaya-Magdalena Nazim-Zurek/ZayaDesign/obj/Debug/netcoreapp2.0/ZayaDesign.AssemblyInfo.cs
+C:/Users/Jakub-Lenovo/Desktop/.ZAYA MAGDA/Zaya-Magdalena Nazim-Zurek/ZayaDesign/obj/Debug/netcoreapp2.0/ZayaDesign.dll
+C:/Users/Jakub-Lenovo/Desktop/.ZAYA MAGDA/Zaya-Magdalena Nazim-Zurek/ZayaDesign/obj/Debug/netcoreapp2.0/ZayaDesign.pdb
+/Users/Artur/Projects/angular/zaya/ZayaDesign/bin/Debug/netcoreapp2.0/ZayaDesign.deps.json
+/Users/Artur/Projects/angular/zaya/ZayaDesign/bin/Debug/netcoreapp2.0/ZayaDesign.runtimeconfig.json
+/Users/Artur/Projects/angular/zaya/ZayaDesign/bin/Debug/netcoreapp2.0/ZayaDesign.runtimeconfig.dev.json
+/Users/Artur/Projects/angular/zaya/ZayaDesign/bin/Debug/netcoreapp2.0/ZayaDesign.dll
+/Users/Artur/Projects/angular/zaya/ZayaDesign/bin/Debug/netcoreapp2.0/ZayaDesign.pdb
+/Users/Artur/Projects/angular/zaya/ZayaDesign/obj/Debug/netcoreapp2.0/ZayaDesign.csprojResolveAssemblyReference.cache
+/Users/Artur/Projects/angular/zaya/ZayaDesign/obj/Debug/netcoreapp2.0/ZayaDesign.csproj.CoreCompileInputs.cache
+/Users/Artur/Projects/angular/zaya/ZayaDesign/obj/Debug/netcoreapp2.0/ZayaDesign.AssemblyInfoInputs.cache
+/Users/Artur/Projects/angular/zaya/ZayaDesign/obj/Debug/netcoreapp2.0/ZayaDesign.AssemblyInfo.cs
+/Users/Artur/Projects/angular/zaya/ZayaDesign/obj/Debug/netcoreapp2.0/ZayaDesign.dll
+/Users/Artur/Projects/angular/zaya/ZayaDesign/obj/Debug/netcoreapp2.0/ZayaDesign.pdb
