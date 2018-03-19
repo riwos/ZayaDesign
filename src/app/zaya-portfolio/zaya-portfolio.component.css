@@ -1,0 +1,53 @@
+.thumb {
+    margin-bottom: 30px;
+}
+
+.whiterectangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0;
+    padding: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    color: #2F2E2E;
+}
+
+    .whiterectangle:hover {
+        opacity: 1;
+    }
+
+.numbertext {
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+}
+
+.numbertable {
+    display: table;
+    height: 100%;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.numbertablecell {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.numbertext111 {
+    font: normal normal normal 80px/1.4em Verdana, Geneva, sans-serif;
+    color: #2F2E2E;
+    line-height: 1.3em;
+    max-height: 3.9em;
+}
