@@ -1,13 +1,11 @@
 .footer-distributed {
     position: absolute;
-    /* bottom: 0;  */
     background-color: #000000;
-    /*#292c2f;*/
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font: bold 16px Verdana;
+    font: bold 16px;
     padding: 55px 50px;
     margin-top: 30px;
 }
@@ -29,7 +27,7 @@
 
 .footer-distributed h3 {
     color: rgba(195, 191, 10, 1);
-    font: normal 24px 'Verdana', cursive;
+    font: normal 24px;
     margin: 0;
 }
 
@@ -55,9 +53,9 @@
 .footer-distributed .footer-company-name {
     color: #ffffff;
     /* #8f9296; */
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
-    margin: 0;
+    margin: 20px;
 }
 
 /* Footer Center */
@@ -69,7 +67,7 @@
 .footer-distributed .footer-center i {
     background-color: #33383b;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 16px;
     width: 38px;
     height: 38px;
     border-radius: 50%;
@@ -80,7 +78,7 @@
 }
 
 .footer-distributed .footer-center i.fa-envelope {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 38px;
 }
 
@@ -94,7 +92,7 @@
 .footer-distributed .footer-center p span {
     display: block;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 2;
 }
 
@@ -115,15 +113,15 @@
     line-height: 20px;
     color: #ffffff;
     /* #92999f; */
-    font-size: 13px;
+    font-size: 16px;
     font-weight: normal;
-    margin: 0;
+     margin: 0; 
 }
 
 .footer-distributed .footer-company-about span {
     display: block;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -139,7 +137,7 @@
     cursor: pointer;
     background-color: #33383b;
     border-radius: 2px;
-    font-size: 20px;
+    font-size: 16px;
     color: #ffffff;
     text-align: center;
     line-height: 35px;
@@ -150,7 +148,7 @@
 @media (max-width: 880px) {
 
     .footer-distributed {
-        font: bold 14px sans-serif;
+        font: bold 16px;
         /*bottom: 0!important;
         position: static;*/
     }
@@ -167,4 +165,36 @@
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
+}
+
+.arrow-go-to-top.active {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.arrow-go-to-top {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.arrow-go-to-top {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 46px;
+    color: #FFF;
+    background: #c3bf0a;
+    border-radius: 50%;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    z-index: 20;
+    transition: .45s all ease-in-out;
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
 }
