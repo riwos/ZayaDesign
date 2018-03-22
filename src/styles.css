@@ -3,3 +3,21 @@
 @import "~bootstrap/dist/css/bootstrap-theme.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
 @import "../src/assets/custom-css/flexslider.min.css";
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+.btn-primary-spacing 
+{
+    margin-top: 40px;
+    margin-right: 15px;
+}
+
+/* 
+ .btn, .btn-warning, .btn-warning:hover, .btn-warning:active, .btn-warning:visited {
+    background-color: #C3BF0A;
+    border-color: #C3BF0A;
+    background-image: linear-gradient(to bottom,#ede73b 0,#C3BF0A 100%);
+    background-repeat: repeat-x;
+}  */

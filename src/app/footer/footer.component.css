@@ -7,7 +7,7 @@
     text-align: left;
     font: bold 16px;
     padding: 55px 50px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 .footer-distributed .footer-left,
@@ -197,4 +197,5 @@
     -webkit-transform: translateY(100px);
     -ms-transform: translateY(100px);
     transform: translateY(100px);
+    cursor: pointer;
 }
