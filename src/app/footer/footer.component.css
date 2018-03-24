@@ -35,6 +35,12 @@
     color: #5383d3;
 }
 
+.zaya-logo-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
 /* Footer links */
 
 .footer-distributed .footer-links {
@@ -56,6 +62,7 @@
     font-size: 16px;
     font-weight: normal;
     margin: 20px;
+    text-align: center;
 }
 
 /* Footer Center */
@@ -128,6 +135,7 @@
 
 .footer-distributed .footer-icons {
     margin-top: 25px;
+    text-align: center;
 }
 
 .footer-distributed .footer-icons a {
