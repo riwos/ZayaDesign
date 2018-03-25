@@ -1,24 +1,44 @@
-.navbar-default .navbar-brand {
-    color: rgba(195, 191, 10, 1);
-    font-weight: bold;
-}
+.navbar {
+    min-height: 55px;
+  }
+  
+  .navbar-brand {
+    padding: 0 15px;
+    height: 55px;
+    line-height: 55px;
+  }
 
 .navbar-default .navbar-text {
     color: #000000;
     font-weight: bold;
+    margin-top: 30px;
 }
 
 .navbar-default .navbar-nav>li>a {
     color: #000000;
 }
 
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: rgba(195, 191, 10, 1);
-}
-
 @media (max-width: 767px) {
     .navbar-nav.pull-right {
         float: none!important;
     }
+}
+
+@media (min-width: 767px) {
+    .navbar-nav > li > a{
+        padding-top: 25px;
+        font-size: 16px;
+    }
+    .navbar-nav {
+        margin: 5px;
+    }
+}
+
+.navbar-toggle{
+    margin-top:  12px;
+    padding: 10px 15px;
+}
+
+.zaya-logo{
+    margin-top: 5px;
 }

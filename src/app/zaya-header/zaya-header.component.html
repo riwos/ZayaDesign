@@ -9,26 +9,28 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand">ZAYA</a>
-                <p class="navbar-text">Home and Gardening</p>
+                <a class="navbar-brand" routerLink="/home">
+                    <img alt="Brand" class="zaya-logo" src="assets/images/logo2.svg" width="100px" height="60px">
+                </a>
+                <p class="navbar-text">Projektowanie Domów i Ogrodów</p>
             </div>
             <div class="navbar-collapse collapse">
                 <!-- Left nav -->
                 <ul class="nav navbar-nav pull-right">
                     <li>
-                        <a class="active" routerLink="/home" routerLinkActive="active">Home</a>
+                        <a class="active" routerLink="/home" routerLinkActive="active">Strona Główna</a>
                     </li>
                     <li>
-                        <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+                        <a routerLink="/portfolio" routerLinkActive="active">Projekty</a>
+                    </li>
+                    <li>
+                        <a routerLink="/about" routerLinkActive="active">Kim Jestem</a>
                     </li>
                     <!-- <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
                         <a href="#">About</a>
                     </li> -->
                     <li>
-                        <a routerLink="/contact" routerLinkActive="active">Contact</a>
+                        <a routerLink="/contact" routerLinkActive="active">Kontakt</a>
                     </li>
                 </ul>
 

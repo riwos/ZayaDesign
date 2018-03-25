@@ -11,7 +11,13 @@ import { ZayaNotFoundComponent } from './zaya-not-found/zaya-not-found.component
 import { ZayaMainPageComponent } from './zaya-main-page/zaya-main-page.component';
 import { ZayaContactComponent } from './zaya-contact/zaya-contact.component';
 import { ZayaPortfolioDetailComponent } from './zaya-portfolio-detail/zaya-portfolio-detail.component';
+<<<<<<< HEAD
 import { ZayaScopeComponent } from './zaya-scope/zaya-scope.component';
+=======
+import { ScrollToModule } from 'ng2-scroll-to';
+import { ZayaAboutComponent } from './zaya-about/zaya-about.component';
+
+>>>>>>> 60620886aa0c2bf9450aaad51fe2fafee86b071d
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +29,11 @@ import { ZayaScopeComponent } from './zaya-scope/zaya-scope.component';
     ZayaNotFoundComponent,
     ZayaContactComponent,
     ZayaPortfolioDetailComponent,
+<<<<<<< HEAD
     ZayaScopeComponent,
+=======
+    ZayaAboutComponent
+>>>>>>> 60620886aa0c2bf9450aaad51fe2fafee86b071d
   ],
   imports: [
     BrowserModule,
@@ -33,7 +43,8 @@ import { ZayaScopeComponent } from './zaya-scope/zaya-scope.component';
       { path: 'portfolio', component: ZayaPortfolioComponent},
       { path: 'contact', component: ZayaContactComponent},
       { path: '**', component: ZayaNotFoundComponent }
-      ])
+      ]),
+      ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
