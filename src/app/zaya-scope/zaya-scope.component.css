@@ -1,0 +1,20 @@
+.text-bold, strong {
+    font-weight: 700;
+}
+h5, .heading-5 {
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+.col-about {
+}
+
+.col-about:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 6px solid #97cb16;
+}

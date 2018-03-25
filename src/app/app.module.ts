@@ -11,6 +11,7 @@ import { ZayaNotFoundComponent } from './zaya-not-found/zaya-not-found.component
 import { ZayaMainPageComponent } from './zaya-main-page/zaya-main-page.component';
 import { ZayaContactComponent } from './zaya-contact/zaya-contact.component';
 import { ZayaPortfolioDetailComponent } from './zaya-portfolio-detail/zaya-portfolio-detail.component';
+import { ZayaScopeComponent } from './zaya-scope/zaya-scope.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { ZayaPortfolioDetailComponent } from './zaya-portfolio-detail/zaya-portf
     ZayaNotFoundComponent,
     ZayaContactComponent,
     ZayaPortfolioDetailComponent,
+    ZayaScopeComponent,
   ],
   imports: [
     BrowserModule,
