@@ -8,15 +8,16 @@
     width: 100%;
     text-align: left;
     font: bold 16px Verdana;
-    padding: 55px 50px;
+    padding: 35px 35px;
     margin-top: 30px;
+    display:table;
 }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right {
-    display: inline-block;
-    vertical-align: top;
+.footer-left,
+.footer-center,
+.footer-right {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 /* Footer left */
