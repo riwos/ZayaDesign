@@ -34,7 +34,11 @@ import { ZayaAboutComponent } from './zaya-about/zaya-about.component';
     RouterModule.forRoot([
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: 'home', component: ZayaMainPageComponent },
-      { path: 'portfolio', component: ZayaPortfolioComponent},
+      { path: 'portfolio', component: ZayaPortfolioComponent,
+          children:[
+            
+          ]
+    },
       { path: 'contact', component: ZayaContactComponent},
       { path: '**', component: ZayaNotFoundComponent }
       ]),
