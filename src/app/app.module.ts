@@ -12,6 +12,7 @@ import { ZayaMainPageComponent } from './zaya-main-page/zaya-main-page.component
 import { ZayaContactComponent } from './zaya-contact/zaya-contact.component';
 import { ZayaPortfolioDetailComponent } from './zaya-portfolio-detail/zaya-portfolio-detail.component';
 import { ScrollToModule } from 'ng2-scroll-to';
+import { ZayaAboutComponent } from './zaya-about/zaya-about.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ScrollToModule } from 'ng2-scroll-to';
     ZayaNotFoundComponent,
     ZayaContactComponent,
     ZayaPortfolioDetailComponent,
+    ZayaAboutComponent
   ],
   imports: [
     BrowserModule,

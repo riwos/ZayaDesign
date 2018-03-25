@@ -48,7 +48,7 @@
 .zaya-section-1 {
     position: relative;
     display: block;
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 .zaya-section-grey {
@@ -67,7 +67,11 @@
     font-size: 20px;
 }
 
-@media (max-width: 720px) {
+.zaya-col4-custom{
+    padding-bottom: 40px;
+}
+
+@media (max-width: 800px) {
     .col-md-4{
         padding-bottom: 40px;
     }
@@ -92,7 +96,7 @@
     }
 }
 
-@media (min-width: 1800px){
+@media (max-width: 760px){
     .blurb .blurb-title {
         margin-top: 20px;
     }
