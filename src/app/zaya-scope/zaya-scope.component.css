@@ -6,9 +6,6 @@ h5, .heading-5 {
     line-height: 1.3;
 }
 
-.col-about {
-}
-
 .col-about:before {
     content: "";
     position: absolute;
