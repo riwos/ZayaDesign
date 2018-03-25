@@ -1,6 +1,6 @@
 .footer-distributed {
     position: absolute;
-    background-color: #000000;
+    background-color: #444444;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -68,7 +68,7 @@
 /* Footer Center */
 
 .footer-distributed .footer-center {
-    width: 35%;
+    width: 32%;
 }
 
 .footer-distributed .footer-center i {
@@ -113,7 +113,7 @@
 /* Footer Right */
 
 .footer-distributed .footer-right {
-    width: 20%;
+    width: 15%;
 }
 
 .footer-distributed .footer-company-about {
