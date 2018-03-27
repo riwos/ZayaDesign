@@ -15,11 +15,11 @@ export class ZayaPortfolioDetailService {
       let resultArray = new Array(),
           foundObject = this.findByName(name),
           rootPath = foundObject.model.images.rootpath;
-
-      for(let obj in foundObject.model.images.imgnames){
-        resultArray.push(rootPath + foundObject.model.images.imgnames[obj]);
-      }    
-
+      if(foundObject !== null && foundObject != undefined){
+        for(let obj in foundObject.model.images.imgnames){
+          resultArray.push(rootPath + foundObject.model.images.imgnames[obj]);
+        }
+      }
       return resultArray;
    }
 
