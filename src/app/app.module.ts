@@ -15,7 +15,7 @@ import { ScrollToModule } from 'ng2-scroll-to';
 import { ZayaAboutComponent } from './zaya-about/zaya-about.component';
 import { ZayaPortfolioDetailService } from './services/zaya-portfolio-detail.service';
 import { ZayaPortfolioDetail2Component } from './zaya-portfolio-detail-2/zaya-portfolio-detail-2.component';
-import { LightboxModule } from 'angular2-lightbox';
+//import { LightboxModule } from 'angular2-lightbox';
 
 @NgModule({
   declarations: [
@@ -41,8 +41,7 @@ import { LightboxModule } from 'angular2-lightbox';
       { path: 'contact', component: ZayaContactComponent},
       { path: '**', component: ZayaNotFoundComponent }
       ]),
-      ScrollToModule.forRoot(),
-      LightboxModule 
+      ScrollToModule.forRoot()
   ],
   providers: [ZayaPortfolioDetailService],
   bootstrap: [AppComponent]
