@@ -10,8 +10,9 @@
             "jobrequirement": "qwe1111111111111",
             "jobtime": new Date(),
             "images": {
-                    "rootpath": "/assets/test",
-                    "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"]
+                    "rootpath": "assets/test/",
+                    "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"],
+                    "imgthumb": ["ta.jpg", "tb.jpg", "tc.jpg", "td.jpg", "te.jpg", "tf.jpg", "tg.jpg", "th.jpg"]
                 }
         }
     },
@@ -26,8 +27,9 @@
             "jobrequirement": "qwe222222222222222",
             "jobtime": new Date(),
             "images": {
-                    "rootpath": "/assets/test",
-                    "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"]
+                    "rootpath": "assets/test/",
+                    "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"],
+                    "imgthumb": ["ta.jpg", "tb.jpg", "tc.jpg", "td.jpg", "te.jpg", "tf.jpg", "tg.jpg", "th.jpg"]
                 }
         }
     },
@@ -42,8 +44,9 @@
             "jobrequirement": "qwe33333333333333",
             "jobtime": new Date(),
             "images": {
-                    "rootpath": "/assets/test",
-                    "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"]
+                    "rootpath": "assets/test/",
+                    "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"],
+                    "imgthumb": ["ta.jpg", "tb.jpg", "tc.jpg", "td.jpg", "te.jpg", "tf.jpg", "tg.jpg", "th.jpg"]
                 }
         }
     },
@@ -58,8 +61,9 @@
             "jobrequirement": "qwe444444444444444444444",
             "jobtime": new Date(),
             "images": {
-                    "rootpath": "/assets/test",
-                    "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"]
+                    "rootpath": "assets/test/",
+                    "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"],
+                    "imgthumb": ["ta.jpg", "tb.jpg", "tc.jpg", "td.jpg", "te.jpg", "tf.jpg", "tg.jpg", "th.jpg"]
                 }
         }
     }
