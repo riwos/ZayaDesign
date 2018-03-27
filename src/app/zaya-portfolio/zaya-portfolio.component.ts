@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { ZayaPortfolioDetailService } from '../services/zaya-portfolio-detail.service';
 
 @Component({
   selector: 'app-zaya-portfolio',
@@ -7,10 +8,14 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 })
 export class ZayaPortfolioComponent implements OnInit, AfterViewInit {
 
-  
-  constructor() { }
+   private numberOfImages : Array<number> = null;
+
+  constructor(private portFolioService : ZayaPortfolioDetailService ) {
+    this.numberOfImages = Array.from(Array(portFolioService.getCountOfImages()),(x,i)=>i)
+   }
 
   ngOnInit() {
+    
   }
 
   ngAfterViewInit(): void {

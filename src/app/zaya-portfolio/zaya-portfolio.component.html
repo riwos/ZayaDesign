@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row" style="margin-top: -40px;">
+    <div class="row" style="margin-top: 50px">
         <div class="col-md-12">
             <div class="page-header" id="b546cab3-423d-4828-a48a-d43f0066b914">
                 <h1 id="51b76941-45cd-4ad4-b2be-20d8bc259023">Moje Projekty
@@ -7,56 +7,14 @@
                 </h1>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" [routerLink]="['/portfolio/1']">
-                <img class="img-responsive " src="assets/images/portfolio1.jpg" alt="100%x300" style="width: 100%;">
+        <div class="col-lg-4 col-md-4 col-xs-6 thumb" *ngFor="let i of numberOfImages">
+            <a class="thumbnail" [routerLink]="[i + 1]"> 
+                <img class="img-responsive " src="assets/images/portfolio{{i + 1}}.jpg" alt="100%x300" style="width: 100%;">
                 <div class="whiterectangle">
                     <div class="numbertext">
                         <div class="numbertable">
                             <div class="numbertablecell">
-                                <div class="numbertext111">01</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" [routerLink]="['/portfolio1/2']">
-                <img class="img-responsive" src="assets/images/portfolio2.jpg" alt="" style="width: 100%">
-                <div class="whiterectangle">
-                    <div class="numbertext">
-                        <div class="numbertable">
-                            <div class="numbertablecell">
-                                <div class="numbertext111">02</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" [routerLink]="['/portfolio/3']">
-                <img class="img-responsive" src="assets/images/portfolio3.jpg" alt="" style="width: 100%">
-                <div class="whiterectangle">
-                    <div class="numbertext">
-                        <div class="numbertable">
-                            <div class="numbertablecell">
-                                <div class="numbertext111">03</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" [routerLink]="['/portfolio/4']">
-                <img class="img-responsive" src="assets/images/portfolio4.jpg" alt="" style="width: 100%">
-                <div class="whiterectangle">
-                    <div class="numbertext">
-                        <div class="numbertable">
-                            <div class="numbertablecell">
-                                <div class="numbertext111">04</div>
+                                <div class="numbertext111">0{{ i + 1 }}</div>
                             </div>
                         </div>
                     </div>
