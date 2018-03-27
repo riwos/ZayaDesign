@@ -14,6 +14,8 @@ import { ZayaPortfolioDetailComponent } from './zaya-portfolio-detail/zaya-portf
 import { ZayaScopeComponent } from './zaya-scope/zaya-scope.component';
 import { ScrollToModule } from 'ng2-scroll-to';
 import { ZayaAboutComponent } from './zaya-about/zaya-about.component';
+import { ZayaPortfolioDetailService } from './services/zaya-portfolio-detail.service';
+import { ZayaPortfolioDetail2Component } from './zaya-portfolio-detail-2/zaya-portfolio-detail-2.component';
 
 @NgModule({
   declarations: [
@@ -27,24 +29,23 @@ import { ZayaAboutComponent } from './zaya-about/zaya-about.component';
     ZayaContactComponent,
     ZayaPortfolioDetailComponent,
     ZayaScopeComponent,
-    ZayaAboutComponent
+    ZayaAboutComponent,
+    ZayaPortfolioDetail2Component
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: 'home', component: ZayaMainPageComponent },
-      { path: 'portfolio', component: ZayaPortfolioComponent,
-          children:[
-            
-          ]
-    },
+      { path: 'portfolio/:id', component: ZayaPortfolioDetailComponent},
+      { path: 'portfolio1/:id', component: ZayaPortfolioDetail2Component},
+      { path: 'portfolio', component: ZayaPortfolioComponent},
       { path: 'contact', component: ZayaContactComponent},
       { path: '**', component: ZayaNotFoundComponent }
       ]),
       ScrollToModule.forRoot()
   ],
-  providers: [],
+  providers: [ZayaPortfolioDetailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

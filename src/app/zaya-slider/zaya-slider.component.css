@@ -13,7 +13,6 @@
 
 .zaya-fake-container{
     margin-top: 30px;
-    /* background-color: rgba(0,0,0,0.25); */
   }
 
 .zaya-container-slider-1{
@@ -29,7 +28,6 @@
     z-index: 12;
     white-space: nowrap;
     font-size: 130px;
-    /* line-height: 130px; */
     font-weight: 400;
     color: rgb(255, 255, 255);
     font-family: Pacifico;
@@ -55,18 +53,11 @@
     font-size: 18px;
     margin-top: 80px;
     margin-bottom: 50px;
-    /* font-weight: 400;
-    line-height: 1.4;
-    font-family: Montserrat, sans-serif;
-    letter-spacing: 0px;
-    text-align: inherit;  */
-    
 }
 
 @media (max-width: 768px) {
     .btn-responsive {
       padding:2px 4px;
-      /* font-size:80%; */
       border-radius: 30px 30px 30px 30px;
     }
     .zaya-slider-h{
@@ -88,7 +79,6 @@
   @media (min-width: 769px) and (max-width: 992px) {
     .btn-responsive {
       padding:13px 15px;
-      /* font-size:90%; */
       border-radius: 30px 30px 30px 30px;
     }
     .zaya-slider-h{
