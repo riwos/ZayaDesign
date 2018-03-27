@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ZayaPortfolioDetailService } from '../services/zaya-portfolio-detail.service';
 
 @Component({
   selector: 'app-zaya-portfolio-detail-2',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ZayaPortfolioDetail2Component implements OnInit {
 
-  constructor() { }
+  constructor(private portFolioService : ZayaPortfolioDetailService) { }
 
   ngOnInit() {
   }

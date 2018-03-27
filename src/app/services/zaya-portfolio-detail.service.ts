@@ -14,9 +14,5 @@ export class ZayaPortfolioDetailService {
    getCountOfImages(){
      return this.dataToRead.length;
    }
-
-  test(){
-    console.log(this.dataToRead);
-  }
-
+   
 }
