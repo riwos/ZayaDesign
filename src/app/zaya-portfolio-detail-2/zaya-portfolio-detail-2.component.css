@@ -1,0 +1,109 @@
+.zaya-slider { 
+    padding: 45px; 
+    margin-bottom: -20px;
+}
+.zaya-slider #thumbcarousel { 
+    margin: 12px 0 0; 
+    padding: 0 45px; 
+}
+
+.zaya-slider #thumbcarousel .item { 
+    text-align: center; 
+}
+
+.zaya-slider #thumbcarousel .item .thumb { 
+    border: 4px solid #cecece; 
+    width: 20%; 
+    margin: 0 2px 20px; 
+    display: inline-block; 
+    vertical-align: middle; 
+    cursor: pointer; 
+}
+
+.zaya-slider #thumbcarousel .item .thumb:hover { 
+    border-color: #C3BF0A; 
+}
+
+.zaya-slider .item img { 
+    width: 100%; 
+    height: auto; 
+}
+
+.carousel-control { 
+    color: #C3BF0A; 
+    text-align: center; 
+    text-shadow: none; 
+    font-size: 30px; 
+    width: 30px; 
+    height: 30px; 
+    line-height: 20px; 
+    top: 23%; 
+}
+
+.carousel-control:hover, .carousel-control:focus, .carousel-control:active { 
+    color: #ede73b; 
+}
+
+.carousel-caption, .carousel-control .fa { 
+    font: normal normal normal 30px/26px FontAwesome; 
+}
+.carousel-control { 
+    background-color: rgba(0, 0, 0, 0); 
+    bottom: auto; font-size: 20px; 
+    position: absolute; 
+    top: 30%; 
+    width: auto; 
+}
+
+.carousel-control.right, .carousel-control.left { 
+    background-color: rgba(0, 0, 0, 0); 
+    background-image: none; 
+}
+
+.zaya-portfolio2-main{
+    margin-bottom: 40px;
+}
+
+.zaya-portfolio2-sidebar{
+    float: left;
+    background: #f5f5f5;
+    padding: 30px 20px;
+}
+
+.zaya-portfolio2-content {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.zaya-portfolio2-info li {
+    margin-bottom: 5px;
+    list-style: none;
+    width: 100%;
+    display: inline-block;
+}
+
+.zaya-portfolio2-info-h5{
+    font-weight: 600;
+}
+
+.zaya-portfolio2-info li .zaya-portfolio2-info-content {
+    text-transform: none !important;
+}
+
+.zaya-portfolio2-info li h5.zaya-portfolio2-info-label, .zaya-portfolio2-info li .zaya-portfolio2-info-content {
+    width: 50%;
+    float: left;
+    margin: 10px 0 15px;
+}
+
+.zaya-portfolio2-pagination {
+    border-top: 1px dashed #ebebeb;
+    padding: 20px 0;
+}
+
+.zaya-background-portfolio2-grey{
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    background-color: #f7f8fa !important;
+}

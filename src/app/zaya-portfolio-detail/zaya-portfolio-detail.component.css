@@ -1,0 +1,52 @@
+.zaya-portfolio-main{
+    padding-top: 80px;
+}
+
+.zaya-portfolio-sidebar{
+    float: left;
+    background: #f5f5f5;
+    padding: 40px 30px;
+    margin: 40px 0 20px;
+}
+
+.zaya-portfolio-content {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.zaya-portfolio-info li {
+    margin-bottom: 5px;
+    list-style: none;
+    width: 100%;
+    display: inline-block;
+}
+
+.zaya-portfolio-info-h5{
+    font-weight: 600;
+}
+
+.zaya-portfolio-info li .zaya-portfolio-info-content {
+    text-transform: none !important;
+}
+
+.zaya-portfolio-info li h5.zaya-portfolio-info-label, .zaya-portfolio-info li .zaya-portfolio-info-content {
+    width: 50%;
+    float: left;
+    margin: 10px 0 15px;
+}
+
+.zaya-portfolio-pagination {
+    border-top: 1px dashed #ebebeb;
+    padding: 20px 0;
+}
+
+.zaya-portfolio-img{
+    margin-bottom: 25px;
+}
+
+.zaya-background-portfolio-grey{
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    background-color: #f7f8fa !important;
+}
