@@ -1,3 +1,4 @@
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { Component, OnInit } from '@angular/core';
 import { ZayaPortfolioDetailService } from '../services/zaya-portfolio-detail.service';
 
@@ -8,14 +9,13 @@ import { ZayaPortfolioDetailService } from '../services/zaya-portfolio-detail.se
 })
 export class ZayaPortfolioDetail2Component implements OnInit {
 
-  private arrayOfPathsLargeImages : Array<string> = null;
-  private arrayOfPathsThumbnailsImages : Array<string> = null;
+  private arrayOfPathsLargeImages: Array<string> = null;
+  private arrayOfPathsThumbnailsImages: Array<string> = null;
 
-  constructor(private portFolioService : ZayaPortfolioDetailService) { }
+  constructor(private portFolioService: ZayaPortfolioDetailService) { }
 
   ngOnInit() {
     this.arrayOfPathsLargeImages = this.portFolioService.getPathForLargeImages("1");
-    this.arrayOfPathsThumbnailsImages = null;
+    this.arrayOfPathsThumbnailsImages = this.portFolioService.getPathForThumbnails("1");
   }
-
 }

@@ -86,32 +86,9 @@
           <div class="clearfix">
             <div id="thumbcarousel" class="carousel slide" data-interval="false">
               <div class="carousel-inner">
-                <div class="item active">
-                  <div data-target="#carousel" data-slide-to="0" class="thumb">
-                    <img src="assets/test/ta.jpg">
-                  </div>
-                  <div data-target="#carousel" data-slide-to="1" class="thumb">
-                    <img src="assets/test/tb.jpg">
-                  </div>
-                  <div data-target="#carousel" data-slide-to="2" class="thumb">
-                    <img src="assets/test/tc.jpg">
-                  </div>
-                  <div data-target="#carousel" data-slide-to="3" class="thumb">
-                    <img src="assets/test/td.jpg">
-                  </div>
-                  <div data-target="#carousel" data-slide-to="4" class="thumb">
-                    <img src="assets/test/te.jpg">
-                  </div>
-                </div>
-                <div class="item">
-                  <div data-target="#carousel" data-slide-to="5" class="thumb">
-                    <img src="assets/test/tf.jpg">
-                  </div>
-                  <div data-target="#carousel" data-slide-to="6" class="thumb">
-                    <img src="assets/test/tg.jpg">
-                  </div>
-                  <div data-target="#carousel" data-slide-to="7" class="thumb">
-                    <img src="assets/test/th.jpg">
+                <div class="item " [ngClass]="{'active': i == 0}" *ngFor="let thumb of arrayOfPathsThumbnailsImages; index as i">
+                  <div  data-target="#carousel" [attr.data-slide-to]="t.index" class="thumb" *ngFor="let t of thumb; index as j">
+                    <img src="{{ t.thumb }}">
                   </div>
                 </div>
               </div>
