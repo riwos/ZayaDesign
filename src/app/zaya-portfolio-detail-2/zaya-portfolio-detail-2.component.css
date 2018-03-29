@@ -97,6 +97,12 @@
     margin: 10px 0 15px;
 }
 
+
+
+
+
+
+
 .zaya-portfolio2-pagination {
     border-top: 1px dashed #ebebeb;
     padding: 20px 0;
@@ -106,4 +112,101 @@
     border-bottom: 1px solid #ededed;
     border-top: 1px solid #ededed;
     background-color: #f7f8fa !important;
+}
+
+.zaya-portfolio2-pagination .prev-post {
+    text-align: right;
+}
+
+.zaya-portfolio2-pagination .prev-post a {
+    text-align: left;
+}
+
+.zaya-portfolio2-pagination .project-nav-arrow {
+    width: calc(50% - 30px);
+}
+
+
+/* .zaya-portfolio2-pagination .next-post {
+    text-align: right;
+} */
+
+.zaya-portfolio2-pagination .next-post a {
+    text-align: left;
+}
+
+.zaya-portfolio2-pagination .project-nav-arrow a i {
+     font-size: 1.566rem;
+    /*font-weight: bold; */
+    padding: 0 15px;
+}
+
+.zaya-portfolio2-pagination .project-nav-arrow a {
+    background: #f5f5f5;
+    color: #252525;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 25px;
+    min-width: 200px;
+    /* font-size: 1.067rem; */
+    font-weight: 700;
+}
+
+.zaya-portfolio2-pagination .back-to-home {
+    float: left;
+}
+.zaya-portfolio2-pagination .back-to-home {
+    width: 60px;
+}
+.back-to-home {
+    text-align: center;
+}
+
+.zaya-portfolio2-pagination .back-to-home a {
+    border: 2px solid #ebebeb;
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.zaya-portfolio2-pagination .back-to-home a i {
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.zaya-portfolio2-pagination .project-nav-arrow a:hover{
+    background: #C3BF0A;
+}
+
+.zaya-portfolio2-pagination .project-nav-arrow a:hover {
+    color: #fff;
+}
+
+.zaya-portfolio2-pagination .back-to-home a:hover{
+    background: #C3BF0A;
+}
+
+.zaya-portfolio2-pagination .back-to-home a:hover {
+    color: #fff;
+}
+
+.zaya-portfolio2-pagination-span{
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+}
+
+.zaya-portfolio2-pagination-a{
+    color: black;
 }

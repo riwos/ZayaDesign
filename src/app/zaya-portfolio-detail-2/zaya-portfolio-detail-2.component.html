@@ -77,7 +77,7 @@
         </div>
         <div class="zaya-slider">
           <div id="carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" >
+            <div class="carousel-inner">
               <div class="item " [ngClass]="{'active': i == 0}" *ngFor="let image of arrayOfPathsLargeImages; index as i">
                 <img src="{{image}}">
               </div>
@@ -87,16 +87,16 @@
             <div id="thumbcarousel" class="carousel slide" data-interval="false">
               <div class="carousel-inner">
                 <div class="item " [ngClass]="{'active': i == 0}" *ngFor="let thumb of arrayOfPathsThumbnailsImages; index as i">
-                  <div  data-target="#carousel" [attr.data-slide-to]="t.index" class="thumb" *ngFor="let t of thumb; index as j">
+                  <div data-target="#carousel" [attr.data-slide-to]="t.index" class="thumb" *ngFor="let t of thumb; index as j">
                     <img src="{{ t.thumb }}">
                   </div>
                 </div>
               </div>
               <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
-                <i class="fa fa-angle-left fa-3x" style="font-size: 4em" aria-hidden="true"></i>
+                <i class="fas fa-angle-left fa-3x" style="font-size: 4em" aria-hidden="true"></i>
               </a>
               <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
-                <i class="fa fa-angle-right" style="font-size: 4em" aria-hidden="true"></i>
+                <i class="fas fa-angle-right" style="font-size: 4em" aria-hidden="true"></i>
               </a>
             </div>
           </div>
@@ -107,20 +107,24 @@
 </div>
 <div class="container">
   <div class="zaya-portfolio2-pagination">
-    <div class="row">
-      <div class="prev-post project-nav-arrow col-xs-5 primary-font">
-        <a href="http://wp.rivertheme.com/zoo-landscaping/project/flowerscaping/" title="Flowerscaping">
-          <i class="clever-icon-arrow-left cs-font"></i>
-          <span>Previous Project</span>
-        </a>
+      <div class="row">
+        <div class="prev-post project-nav-arrow col-xs-5">
+          <a href="#">
+            <i class="fas fa-angle-left fa-2x"></i>
+            <span class="zaya-portfolio2-pagination-span">Poprzedni Project</span>
+          </a>
+        </div>
+        <div class="back-to-home">
+          <a class="zaya-portfolio2-pagination-a" href="#" rel="/portfolio" title="Powrót do Projektów">
+            <i class="fas fa-th-large fa-2x"></i>
+          </a>
+        </div>
+        <div class="next-post project-nav-arrow col-xs-5">
+          <a href="#" >
+            <span class="zaya-portfolio2-pagination-span">Next Project</span>
+            <i class="fas fa-angle-right fa-2x"></i>
+          </a>
+        </div>
       </div>
-      <div class="back-to-home">
-        <a href="http://wp.rivertheme.com/zoo-landscaping/" rel="home" title="Back to Home">
-          <i class="cs-font clever-icon-grid"></i>
-        </a>
-      </div>
-      <div class="next-post project-nav-arrow col-xs-5 primary-font">
-      </div>
-    </div>
   </div>
 </div>

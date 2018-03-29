@@ -140,8 +140,8 @@
 
 .footer-distributed .footer-icons a {
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 40px;
     cursor: pointer;
     background-color: #33383b;
     border-radius: 2px;
@@ -151,6 +151,7 @@
     line-height: 35px;
     margin-right: 3px;
     margin-bottom: 5px;
+    padding: 4px;
 }
 
 @media (max-width: 880px) {
