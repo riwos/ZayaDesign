@@ -17,6 +17,7 @@ import { ZayaPortfolioDetailService } from './services/zaya-portfolio-detail.ser
 import { ZayaPortfolioDetail2Component } from './zaya-portfolio-detail-2/zaya-portfolio-detail-2.component';
 //import { LightboxModule } from 'angular2-lightbox';
 import { MomentModule } from 'angular2-moment';
+import { ZayaMapperService } from './services/zaya-mapper.service';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,7 @@ import { MomentModule } from 'angular2-moment';
       ScrollToModule.forRoot(),
       MomentModule
   ],
-  providers: [ZayaPortfolioDetailService],
+  providers: [ZayaPortfolioDetailService, ZayaMapperService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

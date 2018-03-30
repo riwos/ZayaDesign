@@ -57,12 +57,13 @@ export class ZayaPortfolioDetailService {
 
   private createArryForThumbnails(arrThumb: Array<string>, rootPath: string): Array<any> {
     let array = [],
-      totalNumber = parseInt((arrThumb.length / 5).toString()),
-      modNumber = arrThumb.length % 5,
+      modulNumber = 5,
+      totalNumber = parseInt((arrThumb.length / modulNumber).toString()),
+      modNumber = arrThumb.length % modulNumber,
       indexAttribute = 0;
     for (let i = 0; i <= totalNumber; i++) {
       array[i] = [];
-      let jCounter = (i + 1) <= totalNumber ? 5 : (modNumber);
+      let jCounter = (i + 1) <= totalNumber ? modulNumber : (modNumber);
       for (let j = 0; j < jCounter; j++) {
         array[i][j] = { index: indexAttribute++, thumb: rootPath + arrThumb[j] };
       }
