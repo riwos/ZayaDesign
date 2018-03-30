@@ -1,6 +1,6 @@
  export const PortoflioDetailData = [
     {
-        name: "1",
+        name: 1,
         model: {
             "title": "T11",
             "introduce": "T111",
@@ -17,7 +17,7 @@
         }
     },
     {
-        name: "2",
+        name: 2,
         model: {
             "title": "T22222",
             "introduce": "T22222",
@@ -27,14 +27,14 @@
             "jobrequirement": "qwe222222222222222",
             "jobtime": new Date(),
             "images": {
-                    "rootpath": "assets/test/",
-                    "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"],
-                    "imgthumb": ["ta.jpg", "tb.jpg", "tc.jpg", "td.jpg", "te.jpg", "tf.jpg", "tg.jpg", "th.jpg"]
+                    "rootpath": "assets/test2/",
+                    "imgnames": ["tht1.png", "tht2.jpg"],
+                    "imgthumb": ["tht1a.png", "tht2b.jpg"]
                 }
         }
     },
     {
-        name: "3",
+        name: 3,
         model: {
             "title": "T333333333",
             "introduce": "T33333333",
@@ -51,7 +51,7 @@
         }
     },
     {
-        name: "4",
+        name: 4,
         model: {
             "title": "T4444444444444",
             "introduce": "T44444444444444",
@@ -61,9 +61,9 @@
             "jobrequirement": "qwe444444444444444444444",
             "jobtime": new Date(),
             "images": {
-                    "rootpath": "assets/test/",
-                    "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"],
-                    "imgthumb": ["ta.jpg", "tb.jpg", "tc.jpg", "td.jpg", "te.jpg", "tf.jpg", "tg.jpg", "th.jpg"]
+                    "rootpath": "assets/test2/",
+                    "imgnames": ["tht2.jpg", "tht1.png"],
+                    "imgthumb": ["tht2b.jpg", "tht1a.png"]
                 }
         }
     }
