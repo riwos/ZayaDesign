@@ -11,7 +11,7 @@ export class ZayaPortfolioDetailService {
     this.dataToRead = PortoflioDetailData;
   }
 
-  getPathForLargeImages(name: string): Array<string> {
+  getPathForLargeImages(name: number): Array<string> {
     this.SetFoundArrayObject(this.findByName(name));
     let resultArray = new Array(),
       foundObject = this.GetFoundArrayObject(),
@@ -27,10 +27,11 @@ export class ZayaPortfolioDetailService {
     return resultArray;
   }
 
-  getPathForThumbnails(name: string): Array<any> {
+  getPathForThumbnails(name: number): Array<any> {
     let resultArray: Array<any> = [],
-      tempArrayOfThumbnails = this.GetFoundArrayObject().model.images.imgthumb,
-      rootPath = this.GetFoundArrayObject().model.images.rootpath;
+        rootPath = this.GetFoundArrayObject().model.images.rootpath;
+
+    var tempArrayOfThumbnails = JSON.parse(JSON.stringify(this.GetFoundArrayObject().model.images.imgthumb));    // copy of array
 
     resultArray = this.createArryForThumbnails(tempArrayOfThumbnails, rootPath);
 
@@ -65,7 +66,7 @@ export class ZayaPortfolioDetailService {
     return array;
   }
 
-  private findByName(currentName: string) {
+  private findByName(currentName: number) {
     let result = null,
       counter = this.dataToRead.length;
 
