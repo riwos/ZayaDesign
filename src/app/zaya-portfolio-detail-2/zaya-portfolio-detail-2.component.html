@@ -3,38 +3,38 @@
     <article class="zaya-portfolio2-main">
       <div class="col-md-6 col-xs-12">
         <div class="page-header">
-          <h1>Tytuł Projektu</h1>
+          <h1>{{ _detailPortfolio.Title }}</h1>
         </div>
         <ul class="zaya-portfolio2-info zaya-portfolio2-sidebar col-6">
           <li>
             <h5 class="zaya-portfolio2-info-label zaya-portfolio2-info-h5">
               Klient: </h5>
             <p class="zaya-portfolio2-info-content">
-              Andrzej J. </p>
+                {{ _detailPortfolio.Customer }} </p>
           </li>
           <li>
             <h5 class="zaya-portfolio2-info-label zaya-portfolio2-info-h5">
               Lokalizacja: </h5>
             <p class="zaya-portfolio2-info-content">
-              New York </p>
+                {{ _detailPortfolio.Location }} </p>
           </li>
           <li>
             <h5 class="zaya-portfolio2-info-label zaya-portfolio2-info-h5">
               Powierzchnia: </h5>
             <p class="zaya-portfolio2-info-content">
-              1.800m2 </p>
+                {{ _detailPortfolio.Area }} m2 </p>
           </li>
           <li>
             <h5 class="zaya-portfolio2-info-label zaya-portfolio2-info-h5">
               Wymagania do pracy: </h5>
             <p class="zaya-portfolio2-info-content">
-              Garden care, Removal, Cuting.v.v... </p>
+              {{ _detailPortfolio.JobRequirement }} </p>
           </li>
           <li>
             <h5 class="zaya-portfolio2-info-label zaya-portfolio2-info-h5">
               Czas wykonania: </h5>
             <p class="zaya-portfolio2-info-content">
-              2 months </p>
+              {{ _detailPortfolio.JobTime | amFromUtc | amDateFormat: 'YYYY-MM-DD' }} </p>
           </li>
         </ul>
       </div>

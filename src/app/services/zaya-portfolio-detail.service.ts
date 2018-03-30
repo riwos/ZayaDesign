@@ -11,8 +11,13 @@ export class ZayaPortfolioDetailService {
     this.dataToRead = PortoflioDetailData;
   }
 
-  getPathForLargeImages(name: number): Array<string> {
+  getDataForModel(name: number){
     this.SetFoundArrayObject(this.findByName(name));
+    return this.GetFoundArrayObject().model;
+  }
+
+  getPathForLargeImages(name: number): Array<string> {
+    
     let resultArray = new Array(),
       foundObject = this.GetFoundArrayObject(),
       rootPath = foundObject.model.images.rootpath;
