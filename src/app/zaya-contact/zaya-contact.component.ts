@@ -12,4 +12,8 @@ export class ZayaContactComponent implements OnInit {
   ngOnInit() {
   }
 
+  submit(f){
+    console.log(f);
+  }
+
 }

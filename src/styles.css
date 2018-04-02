@@ -20,6 +20,10 @@
     padding: 20px 66px;
 }
 
+.form-control.ng-touched.ng-invalid{
+    border: 2px solid #A94442;
+}
+
 
  /* .btn, .btn-warning, .btn-warning:hover, .btn-warning:active, .btn-warning:visited{
     background-color: #C3BF0A;
