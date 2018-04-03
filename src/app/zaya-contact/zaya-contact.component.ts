@@ -5,15 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './zaya-contact.component.html',
   styleUrls: ['./zaya-contact.component.css']
 })
-export class ZayaContactComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+export class ZayaContactComponent{
+  
+  resolved(captchaResponse: string) {
+    console.log(`Resolved captcha with response ${captchaResponse}:`);
   }
 
-  submit(f){
-    console.log(f);
+  submit(sendMail) {
+    console.log(sendMail);
   }
 
 }

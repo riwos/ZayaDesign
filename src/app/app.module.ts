@@ -19,6 +19,8 @@ import { ZayaPortfolioDetail2Component } from './zaya-portfolio-detail-2/zaya-po
 import { MomentModule } from 'angular2-moment';
 import { ZayaMapperService } from './services/zaya-mapper.service';
 import { FormsModule }   from '@angular/forms';
+import { RecaptchaModule, RECAPTCHA_SETTINGS, RecaptchaSettings } from 'ng-recaptcha';
+import { RecaptchaFormsModule  } from 'ng-recaptcha/forms';
 
 @NgModule({
   declarations: [
@@ -46,9 +48,20 @@ import { FormsModule }   from '@angular/forms';
       ]),
       ScrollToModule.forRoot(),
       MomentModule,
-      FormsModule      
+      FormsModule,
+      RecaptchaModule.forRoot(),   
+      RecaptchaFormsModule  
   ],
-  providers: [ZayaPortfolioDetailService, ZayaMapperService],
+  providers: [
+    ZayaPortfolioDetailService, 
+    ZayaMapperService,
+    {
+      provide: RECAPTCHA_SETTINGS,
+      useValue: { 
+        siteKey: '6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S',
+      } as RecaptchaSettings,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
