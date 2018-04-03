@@ -15,7 +15,6 @@ import { ScrollToModule } from 'ng2-scroll-to';
 import { ZayaAboutComponent } from './zaya-about/zaya-about.component';
 import { ZayaPortfolioDetailService } from './services/zaya-portfolio-detail.service';
 import { ZayaPortfolioDetail2Component } from './zaya-portfolio-detail-2/zaya-portfolio-detail-2.component';
-//import { LightboxModule } from 'angular2-lightbox';
 import { MomentModule } from 'angular2-moment';
 import { ZayaMapperService } from './services/zaya-mapper.service';
 import { FormsModule }   from '@angular/forms';
