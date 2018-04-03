@@ -208,3 +208,7 @@
     transform: translateY(100px);
     cursor: pointer;
 }
+
+.fs-copyright {
+    border-top: 1px solid #676767;
+}
