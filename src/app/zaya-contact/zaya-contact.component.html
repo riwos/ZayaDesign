@@ -71,7 +71,7 @@
                   Twoje imię musi mieć minimum {{ firstName.errors.minlength.requiredLength }} znaki.
               </div> 
               <div *ngIf="firstName.errors.maxlength">
-                  Twoje imię nie może mieć więcęj niż {{ firstName.errors.maxlength.requiredLength }} znaków.
+                  Twoje imię nie może mieć więcęj niż {{ firstName.errors.maxlength.actualLength }} znaków.
               </div>  
             </div>
           </div>
@@ -110,7 +110,7 @@
         <div class="col-md-12" id="16987d8b-e04b-4174-bee8-0e6899300f84">
           <div class="form-group" id="060a8e79-9c8c-485f-8876-7f7d83154058">
             <textarea required  maxlength="500" ngModel #body="ngModel" name="body" class="form-control input-lg" rows="6" type="text" 
-            placeholder="Wpisz tresc wiadomośći" id="view_6cdd55ff-7d1e-44ac-bcec-d6efaedd576e"></textarea>
+            placeholder="Wpisz treść wiadomośći" id="view_6cdd55ff-7d1e-44ac-bcec-d6efaedd576e"></textarea>
             <div class="alert alert-danger" *ngIf="body.touched && !body.valid">
                 <div *ngIf="body.errors.required">
                     Treść wiadomośći jest wymagana.
