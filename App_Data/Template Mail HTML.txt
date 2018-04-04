@@ -1,0 +1,86 @@
+﻿<p></p>
+<div align="center">
+<table class="head-wrap w320 full-width-gmail-android" bgcolor="#f9f8f8" cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+<td background="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfkAAAAICAMAAADN0XbeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQzMDFEOUMyQUQxNzExRTI5RTA0ODRBQUFENzE1MTI0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQzMDFEOUMzQUQxNzExRTI5RTA0ODRBQUFENzE1MTI0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDMwMUQ5QzBBRDE3MTFFMjlFMDQ4NEFBQUQ3MTUxMjQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RDMwMUQ5QzFBRDE3MTFFMjlFMDQ4NEFBQUQ3MTUxMjQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7ESIScAAAAulBMVEX////mYFlObrbo5ubmXVZLa7T3zsx+lsrxpqJKa7TlXFVJarTti4ecrtblW1XJ0+l3j8fobmjshH9gfb1ffL3naGLyrqu+yuRUc7jpcm1GaLNMbLXlWVKlttrmX1nc4/Fee7z76OhYdrrrfXj87exvicPDzuZjf77519b0urfobGb2ycbnZV/64N/T2+1NbrXoamTqdnHr7/dng8DpcGrpb2qywN/2xcLL1erm6/Vcerz40M9Zd7rmXVfp+SfcAAAAvUlEQVR42uzUVw6DMBREUZuYQAiQ3nvvvbf9byt/eQTPAhzlzffVkSXLFlKf5w/FZ0HVQks5e2rcpZTs/JgjdCjM9yhq9TcISmdv1JRLbXQgdox29JsPByuKzs8GhEYdambbFzwQO0Y72s17uylFla4Nv47DmppLTsEviB2znfjNq9qDokwBQvbkSk3yCA/EjumOUN+bLyJQsW6j3ccR6NRUaOyY7sTfvEuRcCy8INL4Eo8d0x2R4P3n3gIMALe+TDUkCJPnAAAAAElFTkSuQmCC" bgcolor="#ffffff" width="100%" height="8" valign="top">
+<div height="8"></div>
+</td>
+</tr>
+<tr class="header-background">
+<td class="header container" align="center">
+<div class="content"><span class="brand"> Zaya Projektowanie wnętrz i Ogrod&oacute;w </span></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="body-wrap w320">
+<tbody>
+<tr>
+<td></td>
+<td class="container">
+<div class="content">
+<table cellspacing="0">
+<tbody>
+<tr>
+<td>
+<table class="soapbox">
+<tbody>
+<tr><!--  <td class="soapbox-title">Witaj drogi użytkowniku !!!</td> --></tr>
+</tbody>
+</table>
+<table class="body">
+<tbody>
+<tr>
+<td class="body-padding"></td>
+<td>
+<div class="body-title">Witamy<span id="fsname"></span>, dziękujemy za przesłanie wiadomości</div>
+<table class="body-text">
+<tbody>
+<tr>
+<td class="body-text-cell">Odpowiemy na twoją wiadomość tak szybko jak to możliwe.
+<div style="text-align: left;">Oto treść twojej wiadomości:
+<p></p>
+<p id="fsbody"></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align: left;"></div>
+<table class="body-signature-block">
+<tbody>
+<tr>
+<td class="body-signature-cell">
+<p>Dziękujemy i będziemy w kontakcie,</p>
+<p class="body-signature"><img width="200" height="200" src="cid:logo" /></p>
+<p>Zaya Projektowanie Wnętrz i Ogrod&oacute;w</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="body-padding"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="footer-wrap w320 full-width-gmail-android" bgcolor="#e5e5e5">
+<tbody>
+<tr>
+<td class="container">
+<div class="content"><span class="footer-group"> <a href="https://www.facebook.com/jakubnazimcom-377199402377865/">Facebook</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://twitter.com/jakubnazimcom">Twitter</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://plus.google.com/116115708779327351897">Instagram</a> </span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>

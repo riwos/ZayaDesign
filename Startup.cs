@@ -23,7 +23,16 @@ namespace ZayaDesign
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvc(options =>
+            {
+                options.ReturnHttpNotAcceptable = true;
+            })
+            .AddXmlSerializerFormatters() // added input and output xml serlializer
+            .AddJsonOptions(options => 
+            {
+                options.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
+                options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;  // ignore NULL value
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
