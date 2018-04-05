@@ -4,13 +4,14 @@ using System.Linq;
 using System.Net.Mail;
 using System.Net.Mime;
 using System.Text;
+using System.Threading.Tasks;
 using HtmlAgilityPack;
 
 namespace ZayaDesign.MainService
 {
-    public static class MainServiceCommonFunctions
+    public class MainServiceCommonFunctions
     {
-        public static bool SendMail(List<string> paramsConfig, Model.MailModel mMail, string path)
+        public async Task SendMail(List<string> paramsConfig, Model.MailModel mMail, string path)
         {
             bool result = true;
             string errorMsg = String.Empty;
@@ -28,7 +29,8 @@ namespace ZayaDesign.MainService
                         CreateEmbededLogo(message, paramsConfig, mMail, path);
                     }
 
-                    smtp.Send(message);
+                    //smtp.Send(message);
+                    await smtp.SendMailAsync(message);
                 }
                 catch (System.Net.Mail.SmtpFailedRecipientsException faliedRecipientsException)
                 {
@@ -54,10 +56,9 @@ namespace ZayaDesign.MainService
                 }
 
             }
-            return result;
         }
 
-        private static System.Net.Mail.SmtpClient CreateSmtpObject(System.Net.Mail.SmtpClient smtpClient, List<string> paramsConfig)
+        private System.Net.Mail.SmtpClient CreateSmtpObject(System.Net.Mail.SmtpClient smtpClient, List<string> paramsConfig)
         {
             smtpClient.Host = paramsConfig.ElementAt(0);
             smtpClient.Port = Int32.Parse(paramsConfig.ElementAt(1));
@@ -76,7 +77,7 @@ namespace ZayaDesign.MainService
             return smtpClient;
         }
 
-        private static System.Net.Mail.MailMessage CreateMessageObject(System.Net.Mail.MailMessage message, List<string> paramsConfig, Model.MailModel mMail)
+        private System.Net.Mail.MailMessage CreateMessageObject(System.Net.Mail.MailMessage message, List<string> paramsConfig, Model.MailModel mMail)
         {
             message.From = new System.Net.Mail.MailAddress(paramsConfig.ElementAt(5));
             message.To.Add(mMail.Mail);
@@ -93,7 +94,7 @@ namespace ZayaDesign.MainService
             return message;
         }
 
-        private static System.Net.Mail.MailMessage CreateEmbededLogo(System.Net.Mail.MailMessage message, List<string> paramsConfig, Model.MailModel mMail, string pathForLogo)
+        private System.Net.Mail.MailMessage CreateEmbededLogo(System.Net.Mail.MailMessage message, List<string> paramsConfig, Model.MailModel mMail, string pathForLogo)
         {
             string rawHtml = InjectBodyOfMessageToHtml(paramsConfig, mMail);
             AlternateView alternateViewHtml = AlternateView.CreateAlternateViewFromString(rawHtml, Encoding.UTF8, MediaTypeNames.Text.Html);
@@ -105,7 +106,7 @@ namespace ZayaDesign.MainService
             return message;
         }
 
-        private static string InjectBodyOfMessageToHtml(List<string> paramsConfig, Model.MailModel mMail)
+        private string InjectBodyOfMessageToHtml(List<string> paramsConfig, Model.MailModel mMail)
         {
             string loadedHtml = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String(paramsConfig.ElementAt(7)));
             HtmlDocument docHtml = new HtmlDocument();

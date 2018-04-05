@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ZayaDesign.MainCommon;
 using ZayaDesign.MainService;
@@ -24,17 +25,28 @@ namespace ZayaDesign.Controllers
             get { return GetDomainPath + "App_Data\\" + "config.json"; }
         }
 
+        private class ContactResponse
+        {
+            public string  reason { get; set;}
+            public bool isOk { get; set;}
+        }
+
         [HttpPost("SendMail")]
-        public IActionResult SendMail([FromBody] MailModel mailModel)
+        public async Task<IActionResult> SendMail([FromBody] MailModel mailModel)
         {
             if (mailModel == null)
             {
                 BadRequest();
             }
 
+            ContactResponse contactResp = new ContactResponse();
+
             try
             {
-                MainServiceCommonFunctions.SendMail(NewtonJsonExtension.GetValuesBySectionName("mail", ConfigPath), mailModel, GetDomainPath);
+                MainServiceCommonFunctions mainCommOnFunc = new MainServiceCommonFunctions();
+                await mainCommOnFunc.SendMail(NewtonJsonExtension.GetValuesBySectionName("mail", ConfigPath), mailModel, GetDomainPath);
+                contactResp.isOk = true;
+                contactResp.reason = "Wiadomość została wysłana pomyślnie";
             }
             catch (Exception ex)
             {
@@ -45,10 +57,13 @@ namespace ZayaDesign.Controllers
                 FileWriter.CreateFile(NewtonJsonExtension.SerializeObject(mailModel),
                    GetDomainPath + "App_Data\\" + "mailError" + DateTime.Now.Ticks.ToString() + ".json");
                 
-                return StatusCode(500);
+                contactResp.isOk = false;
+                contactResp.reason = "Nie udało się wysłać wiadomości";
+
+                return StatusCode(500, contactResp);
             }
 
-            return Ok();
+            return Ok(contactResp);
         }
     }
 }
