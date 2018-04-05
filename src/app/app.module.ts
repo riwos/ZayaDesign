@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { ZayaHeaderComponent } from './zaya-header/zaya-header.component';
@@ -20,6 +19,9 @@ import { ZayaMapperService } from './services/zaya-mapper.service';
 import { FormsModule }   from '@angular/forms';
 import { RecaptchaModule, RECAPTCHA_SETTINGS, RecaptchaSettings } from 'ng-recaptcha';
 import { RecaptchaFormsModule  } from 'ng-recaptcha/forms';
+import { ZayaHttpService } from './services/zaya-http.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule, ToastNoAnimation, ToastNoAnimationModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,12 @@ import { RecaptchaFormsModule  } from 'ng-recaptcha/forms';
       MomentModule,
       FormsModule,
       RecaptchaModule.forRoot(),   
-      RecaptchaFormsModule  
+      RecaptchaFormsModule,
+      HttpClientModule,
+      ToastNoAnimationModule,
+      ToastrModule.forRoot({
+        toastComponent: ToastNoAnimation,
+      }) 
   ],
   providers: [
     ZayaPortfolioDetailService, 
@@ -58,9 +65,16 @@ import { RecaptchaFormsModule  } from 'ng-recaptcha/forms';
       provide: RECAPTCHA_SETTINGS,
       useValue: { 
         siteKey: '6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S',
-      } as RecaptchaSettings,
-    }
+      } as RecaptchaSettings
+    },
+    ZayaHttpService,
+    { provide: 'BASE_URL', useFactory: getBaseUrl }
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function getBaseUrl() {
+  return "http://localhost:5000/";
+  //document.getElementsByTagName('base')[0].href;
+}

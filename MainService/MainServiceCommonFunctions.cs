@@ -13,7 +13,6 @@ namespace ZayaDesign.MainService
     {
         public async Task SendMail(List<string> paramsConfig, Model.MailModel mMail, string path)
         {
-            bool result = true;
             string errorMsg = String.Empty;
             using (var message = new System.Net.Mail.MailMessage())
             using (var smtp = new System.Net.Mail.SmtpClient())
@@ -29,25 +28,21 @@ namespace ZayaDesign.MainService
                         CreateEmbededLogo(message, paramsConfig, mMail, path);
                     }
 
-                    //smtp.Send(message);
                     await smtp.SendMailAsync(message);
                 }
                 catch (System.Net.Mail.SmtpFailedRecipientsException faliedRecipientsException)
                 {
                     errorMsg = faliedRecipientsException.Message;
-                    result = false;
                     throw;
                 }
                 catch (System.Net.Mail.SmtpFailedRecipientException failedRecipientException)
                 {
                     errorMsg = failedRecipientException.Message;
-                    result = false;
                     throw;
                 }
                 catch (Exception ehttp)
                 {
                     errorMsg = ehttp.Message;
-                    result = false;
                     throw;
                 }
                 finally
@@ -113,6 +108,8 @@ namespace ZayaDesign.MainService
             docHtml.LoadHtml(loadedHtml);
             HtmlNode el = docHtml.GetElementbyId("fsbody");
             el.InnerHtml = mMail.Body;
+            el = docHtml.GetElementbyId("fsname");
+            el.InnerHtml = mMail.Name;
 
             return docHtml.DocumentNode.InnerHtml;
         }
