@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Mail;
 using System.Net.Mime;
@@ -11,7 +12,7 @@ namespace ZayaDesign.MainService
 {
     public class MainServiceCommonFunctions
     {
-        public async Task SendMail(List<string> paramsConfig, Model.MailModel mMail, string path)
+        public async Task SendMail(List<string> paramsConfig, Model.MailModel mMail)
         {
             string errorMsg = String.Empty;
             using (var message = new System.Net.Mail.MailMessage())
@@ -25,7 +26,7 @@ namespace ZayaDesign.MainService
                     if (message.IsBodyHtml)
                     {
                         InjectBodyOfMessageToHtml(paramsConfig, mMail);
-                        CreateEmbededLogo(message, paramsConfig, mMail, path);
+                        CreateEmbededLogo(message, paramsConfig, mMail);
                     }
 
                     await smtp.SendMailAsync(message);
@@ -89,16 +90,24 @@ namespace ZayaDesign.MainService
             return message;
         }
 
-        private System.Net.Mail.MailMessage CreateEmbededLogo(System.Net.Mail.MailMessage message, List<string> paramsConfig, Model.MailModel mMail, string pathForLogo)
+        private System.Net.Mail.MailMessage CreateEmbededLogo(System.Net.Mail.MailMessage message, List<string> paramsConfig, Model.MailModel mMail)
         {
             string rawHtml = InjectBodyOfMessageToHtml(paramsConfig, mMail);
             AlternateView alternateViewHtml = AlternateView.CreateAlternateViewFromString(rawHtml, Encoding.UTF8, MediaTypeNames.Text.Html);
-            LinkedResource mainLogo = new LinkedResource(@pathForLogo + "logo.png", MediaTypeNames.Image.Jpeg);
+            Stream streamForLogo = CreateImageStream(paramsConfig.ElementAt(11));
+            LinkedResource mainLogo = new LinkedResource(streamForLogo, "image/png");
             mainLogo.ContentId = "logo";
             alternateViewHtml.LinkedResources.Add(mainLogo);
             message.AlternateViews.Add(alternateViewHtml);
 
             return message;
+        }
+
+        private Stream CreateImageStream(string base64)
+        {
+            var bytes = Convert.FromBase64String(base64);
+            var contents = new MemoryStream(bytes);
+            return contents;
         }
 
         private string InjectBodyOfMessageToHtml(List<string> paramsConfig, Model.MailModel mMail)

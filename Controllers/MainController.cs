@@ -44,7 +44,7 @@ namespace ZayaDesign.Controllers
             try
             {
                 MainServiceCommonFunctions mainCommOnFunc = new MainServiceCommonFunctions();
-                await mainCommOnFunc.SendMail(NewtonJsonExtension.GetValuesBySectionName("mail", ConfigPath), mailModel, GetDomainPath);
+                await mainCommOnFunc.SendMail(NewtonJsonExtension.GetValuesBySectionName("mail", ConfigPath), mailModel);
                 contactResp.isOk = true;
                 contactResp.reason = "Wiadomość została wysłana pomyślnie";
             }
