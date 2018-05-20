@@ -45,6 +45,7 @@ import { ToastrModule, ToastNoAnimation, ToastNoAnimationModule } from 'ngx-toas
       { path: 'portfolio/:id', component: ZayaPortfolioDetail2Component},
       { path: 'portfolio', component: ZayaPortfolioComponent},
       { path: 'contact', component: ZayaContactComponent},
+      { path: 'about', component: ZayaAboutComponent},
       { path: '**', component: ZayaNotFoundComponent }
       ]),
       ScrollToModule.forRoot(),
