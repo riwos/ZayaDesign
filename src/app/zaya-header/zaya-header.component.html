@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" routerLink="/home">
+                <a class="navbar-brand" routerLink="/home" (click)="onMenuClick()">
                     <img alt="Brand" class="zaya-logo" src="assets/images/logo3.svg" width="100px" height="60px">
                 </a>
                 <p class="navbar-text">Projektowanie Wnętrz i Ogrodów</p>
@@ -18,19 +18,19 @@
                 <!-- Left nav -->
                 <ul class="nav navbar-nav pull-right">
                     <li>
-                        <a class="active" routerLink="/home" routerLinkActive="active">Strona Główna</a>
+                        <a class="active" routerLink="/home" routerLinkActive="active" (click)="onMenuClick()">Strona Główna</a>
                     </li>
                     <li>
-                        <a routerLink="/portfolio" routerLinkActive="active">Projekty</a>
+                        <a routerLink="/portfolio" routerLinkActive="active" (click)="onMenuClick()">Projekty</a>
                     </li>
                     <li>
-                        <a routerLink="/about" routerLinkActive="active">O Nas</a>
+                        <a routerLink="/about" routerLinkActive="active" (click)="onMenuClick()">O Nas</a>
                     </li>
                     <!-- <li>
                         <a href="#">About</a>
                     </li> -->
                     <li>
-                        <a routerLink="/contact" routerLinkActive="active">Kontakt</a>
+                        <a routerLink="/contact" routerLinkActive="active" (click)="onMenuClick()">Kontakt</a>
                     </li>
                 </ul>
 
