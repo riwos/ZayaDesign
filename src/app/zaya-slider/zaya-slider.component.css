@@ -29,7 +29,7 @@
     margin-bottom: 50px;
 }
 
-@media  (max-width: 767px)  {
+@media (max-width: 1219px) and (min-width: 992px){
     .btn-responsive {
         padding:12px 24px;
         border-radius: 30px 30px 30px 30px;
@@ -39,47 +39,14 @@
         font-size: 34px;
         font-weight: 900;
         text-align: center;
-        text-transform: uppercase;
         margin-top: 20px;
         margin-bottom: 20px;
         color: white;
+        font-family: Pacifico;
     }
-  }
+}
 
-@media (min-width: 993px) {
-    .btn-responsive {
-      padding:12px 14px;
-      border-radius: 30px 30px 30px 30px;
-      font-size: 10px;
-    }
-    .zaya-slider-h > p{
-        text-align: center;
-        z-index: 12;
-        white-space: nowrap;
-        font-size: 30px;
-        margin-bottom: 20px;
-        margin-top: -5px;
-    }
-    .zaya-slider-p {
-        color: white;
-        font-style: normal;
-        font-size: 12px;
-        margin-top: 0px;
-        margin-bottom: 15px;
-    }
-    .zaya-container-slider {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        display: block;
-        margin-top: 10px;
-    }
-    
-  }
-  
-  @media (min-width: 769px) and (max-width: 992px) {
+@media (max-width: 991px) and (min-width: 768px){
     .btn-responsive {
         padding: 13px 25px;
         border-radius: 30px 30px 30px 30px;
@@ -92,6 +59,7 @@
         font-size: 60px;
         margin-bottom: 40px;
         margin-top: 40px;
+        font-family: Pacifico;
     }
     .zaya-slider-p {
         color: white;
@@ -109,6 +77,39 @@
         display: block;
         margin-top: 10px;
     }
-  }
+}
+
+@media (max-width: 767px){
+    .btn-responsive {
+        padding:12px 14px;
+        border-radius: 30px 30px 30px 30px;
+        font-size: 10px;
+      }
+      .zaya-slider-h > p{
+          text-align: center;
+          z-index: 12;
+          white-space: nowrap;
+          font-size: 30px;
+          margin-bottom: 20px;
+          margin-top: -5px;
+          font-family: Pacifico;
+      }
+      .zaya-slider-p {
+          color: white;
+          font-style: normal;
+          font-size: 12px;
+          margin-top: 0px;
+          margin-bottom: 15px;
+      }
+      .zaya-container-slider {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          display: block;
+          margin-top: 10px;
+      }
+}
 
   
