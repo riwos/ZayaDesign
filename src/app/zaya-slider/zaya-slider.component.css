@@ -33,16 +33,26 @@
     .btn-responsive {
         padding:12px 24px;
         border-radius: 30px 30px 30px 30px;
+        font-size: 24px;
       }
     .zaya-slider-h > p{
         z-index: 12;
-        font-size: 34px;
+        font-size: 78px;
         font-weight: 900;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
         color: white;
         font-family: Pacifico;
+    }
+    .zaya-container-slider {
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        display: block;
+        margin-top: 10px;
     }
 }
 
