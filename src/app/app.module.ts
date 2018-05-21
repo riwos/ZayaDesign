@@ -22,6 +22,8 @@ import { RecaptchaFormsModule  } from 'ng-recaptcha/forms';
 import { ZayaHttpService } from './services/zaya-http.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule, ToastNoAnimation, ToastNoAnimationModule } from 'ngx-toastr';
+import {GoTopButtonModule} from 'ng2-go-top-button';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,9 @@ import { ToastrModule, ToastNoAnimation, ToastNoAnimationModule } from 'ngx-toas
       ToastNoAnimationModule,
       ToastrModule.forRoot({
         toastComponent: ToastNoAnimation,
-      }) 
+      }),
+      GoTopButtonModule,
+      BrowserAnimationsModule
   ],
   providers: [
     ZayaPortfolioDetailService, 
