@@ -22,7 +22,11 @@
           <a class="list-group-item zaya-contact-group-item">
             <i class="fas fa-phone fa-3x" aria-hidden="true"></i>
             <div class="zaya-contact-text">
-              <p class="list-group-item-text">(+48) 512 722 365</p>
+              <p class="list-group-item-text">
+                <a style="color: #C3BF0A; text-decoration: underline;" href="tel:512 722 365">
+                  <b>(+48) 512 722 365</b>
+                </a>
+              </p>
               <p class="list-group-item-text">Pracujemy Pon-Pt od 9:00 do 17:30,</p>
             </div>
           </a>
@@ -36,7 +40,8 @@
           <a class="list-group-item zaya-contact-group-item">
             <h2 class="list-group-item-heading" style="text-align: center;">Zostan z nami</h2>
             <div class="zaya-contact-global-social">
-              <a class="zaya-contact-social" href="https://www.facebook.com/Zaya-Projektowanie-Wn%C4%99trz-i-Ogrod%C3%B3w-593941440962918" target="_blank">
+              <a class="zaya-contact-social" href="https://www.facebook.com/Zaya-Projektowanie-Wn%C4%99trz-i-Ogrod%C3%B3w-593941440962918"
+                target="_blank">
                 <i class="fab fa-facebook-square fa-3x" aria-hidden="true"></i>
               </a>
               <a class="zaya-contact-social" href="https://twitter.com/ZayaDesign" target="_blank">
@@ -61,77 +66,76 @@
       <form #sendMail="ngForm" (ngSubmit)="submit(sendMail)">
         <div id="a5bc3c77-8dc1-460a-b410-36e81b1db82e" class="col-md-12">
           <div class="form-group" id="110b829e-9d43-48a6-a254-ce38d4edc598">
-            <input required minlength="3" maxlength="20" ngModel #firstName="ngModel" name="firstName" class="form-control input-lg" type="text" 
-            placeholder="Podaj Imię" id="view_a67ab3d3-6aaa-4b6c-ae88-3f70c183d8e7">
+            <input required minlength="3" maxlength="20" ngModel #firstName="ngModel" name="firstName" class="form-control input-lg"
+              type="text" placeholder="Podaj Imię" id="view_a67ab3d3-6aaa-4b6c-ae88-3f70c183d8e7">
             <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">
               <div *ngIf="firstName.errors.required">
-                  Twoje imię jest wymagane
+                Twoje imię jest wymagane
               </div>
               <div *ngIf="firstName.errors.minlength">
-                  Twoje imię musi mieć minimum {{ firstName.errors.minlength.requiredLength }} znaki.
-              </div> 
+                Twoje imię musi mieć minimum {{ firstName.errors.minlength.requiredLength }} znaki.
+              </div>
               <div *ngIf="firstName.errors.maxlength">
-                  Twoje imię nie może mieć więcęj niż {{ firstName.errors.maxlength.actualLength }} znaków.
-              </div>  
+                Twoje imię nie może mieć więcęj niż {{ firstName.errors.maxlength.actualLength }} znaków.
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-12" id="1057071a-3dd2-4af5-adf7-b637cc37ac6e">
           <div class="form-group" id="0da3b85b-b9b0-4309-bb90-e7445d94b5ac">
-            <input required ngModel #email="ngModel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$" name="email" class="form-control input-lg" type="email" 
-            placeholder="Podaj swój mail" id="view_0be14e80-4ea2-41bb-be89-81d54dcfb9a5">
+            <input required ngModel #email="ngModel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$" name="email" class="form-control input-lg"
+              type="email" placeholder="Podaj swój mail" id="view_0be14e80-4ea2-41bb-be89-81d54dcfb9a5">
             <div class="alert alert-danger" *ngIf="email.touched && !email.valid">
-                <div *ngIf="email.errors.required">
-                    Twoje adres mailowy jest wymagany.
-                </div>
-                <div *ngIf="email.errors.pattern">
-                    Twoje adres mailowy nie jest prawidłowo zbudowany. Prawidłowo zbudowany mail wygląda tak: nazwa@domena.com
-                </div>
+              <div *ngIf="email.errors.required">
+                Twoje adres mailowy jest wymagany.
+              </div>
+              <div *ngIf="email.errors.pattern">
+                Twoje adres mailowy nie jest prawidłowo zbudowany. Prawidłowo zbudowany mail wygląda tak: nazwa@domena.com
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-12" id="98ed138c-56af-424e-a9c9-82cd7e802219">
           <div class="form-group" id="ea0446bf-8622-4e65-b129-e4a01fc186eb">
-            <input required minlength="3" maxlength="30" ngModel #subject="ngModel" name="subject" class="form-control input-lg" type="text" 
-            placeholder="Wpisz temat wiadomośći" id="view_ce287ecb-b820-4498-a913-5d3d23206092">
+            <input required minlength="3" maxlength="30" ngModel #subject="ngModel" name="subject" class="form-control input-lg" type="text"
+              placeholder="Wpisz temat wiadomośći" id="view_ce287ecb-b820-4498-a913-5d3d23206092">
             <div class="alert alert-danger" *ngIf="subject.touched && !subject.valid">
-                <div *ngIf="subject.errors.required">
-                    Temat wiadomośći jest wymagany.
-                </div>
-                <div *ngIf="subject.errors.minlength">
-                    Temat wiadomośći musi mieć {{ subject.errors.minlength.requiredLength }} znaki.
-                </div> 
-                <div *ngIf="subject.errors.maxlength">
-                    Temat wiadomośći nie może mieć więcęj niż {{ subject.errors.maxlength.requiredLength }} znaków.
-                </div>  
+              <div *ngIf="subject.errors.required">
+                Temat wiadomośći jest wymagany.
               </div>
+              <div *ngIf="subject.errors.minlength">
+                Temat wiadomośći musi mieć {{ subject.errors.minlength.requiredLength }} znaki.
+              </div>
+              <div *ngIf="subject.errors.maxlength">
+                Temat wiadomośći nie może mieć więcęj niż {{ subject.errors.maxlength.requiredLength }} znaków.
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-12" id="16987d8b-e04b-4174-bee8-0e6899300f84">
           <div class="form-group" id="060a8e79-9c8c-485f-8876-7f7d83154058">
-            <textarea required  maxlength="500" ngModel #body="ngModel" name="body" class="form-control input-lg" rows="6" type="text" 
-            placeholder="Wpisz treść wiadomośći" id="view_6cdd55ff-7d1e-44ac-bcec-d6efaedd576e"></textarea>
+            <textarea required maxlength="500" ngModel #body="ngModel" name="body" class="form-control input-lg" rows="6" type="text"
+              placeholder="Wpisz treść wiadomośći" id="view_6cdd55ff-7d1e-44ac-bcec-d6efaedd576e"></textarea>
             <div class="alert alert-danger" *ngIf="body.touched && !body.valid">
-                <div *ngIf="body.errors.required">
-                    Treść wiadomośći jest wymagana.
-                </div>
-                <div *ngIf="body.errors.maxlength">
-                    Temat wiadomośći nie może mieć więcęj niż {{ body.errors.maxlength.requiredLength }} znaków.
-                </div>  
+              <div *ngIf="body.errors.required">
+                Treść wiadomośći jest wymagana.
               </div>
+              <div *ngIf="body.errors.maxlength">
+                Temat wiadomośći nie może mieć więcęj niż {{ body.errors.maxlength.requiredLength }} znaków.
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-12 col-xs-12">
           <div class="form-group">
             <!-- Replace data-sitekey with your own one, generated at https://www.google.com/recaptcha/admin -->
-            <re-captcha class="pull-right"  (resolved)="resolved($event)"  ngModel #zayaRecaptcha="ngModel"
-            name="zayaRecaptcha" required></re-captcha>
+            <re-captcha class="pull-right" (resolved)="resolved($event)" ngModel #zayaRecaptcha="ngModel" name="zayaRecaptcha" required></re-captcha>
           </div>
         </div>
         <div class="col-md-12 col-xs-12">
           <div class="form-group">
-            <input type="submit" [disabled]="!sendMail.valid" class="btn btn-lg btn-success btn-send pull-right btn-responsive" 
-            style="margin-top: 15px;" value="Wyslij wiadomość">
+            <input type="submit" [disabled]="!sendMail.valid" class="btn btn-lg btn-success btn-send pull-right btn-responsive" style="margin-top: 15px;"
+              value="Wyslij wiadomość">
           </div>
         </div>
       </form>
