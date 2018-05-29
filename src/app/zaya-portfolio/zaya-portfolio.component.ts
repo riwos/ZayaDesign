@@ -8,7 +8,7 @@ import { ZayaPortfolioDetailService } from '../services/zaya-portfolio-detail.se
 })
 export class ZayaPortfolioComponent implements OnInit, AfterViewInit {
 
-   private numberOfImages : Array<number> = null;
+  numberOfImages : Array<number> = null;
 
   constructor(private portFolioService : ZayaPortfolioDetailService ) {
     this.numberOfImages = Array.from(Array(portFolioService.getCountOfImages()),(x,i)=>i)

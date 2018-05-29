@@ -13,11 +13,11 @@ import { ZayaMapperService } from '../services/zaya-mapper.service';
 })
 export class ZayaPortfolioDetail2Component implements OnInit {
 
-  private arrayOfPathsLargeImages: Array<string> = null;
-  private arrayOfPathsThumbnailsImages: Array<string> = null;
-  private nextLink = 0;
-  private prevLink = 0;
-  private _detailPortfolio: PortfolioDetailModel = null;
+   arrayOfPathsLargeImages: Array<string> = null;
+   arrayOfPathsThumbnailsImages: Array<string> = null;
+   nextLink = 0;
+   prevLink = 0;
+   _detailPortfolio: PortfolioDetailModel = null;
 
   constructor(private portFolioService: ZayaPortfolioDetailService, private route: ActivatedRoute,
               private zayaMapper : ZayaMapperService<PortfolioDetailModel>) {
