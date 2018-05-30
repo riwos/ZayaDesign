@@ -1,6 +1,5 @@
 .zaya-slider { 
-    padding: 45px; 
-    margin-bottom: -20px;
+    margin-bottom: 20px;
 }
 .zaya-slider #thumbcarousel { 
     margin: 12px 0 0; 
@@ -204,4 +203,15 @@
 
 .zaya-portfolio2-pagination-a{
     color: black;
+}
+
+@media (max-width: 412px) {
+    .zaya-slider #thumbcarousel .item .thumb {
+        border: 2px solid #cecece;
+        width: 40%;
+        margin: 0 2px 20px;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+    }
 }

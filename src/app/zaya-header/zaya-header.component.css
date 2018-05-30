@@ -34,6 +34,19 @@
     }
 }
 
+@media (max-width: 412px) {
+    .navbar-toggle{
+        margin-top:  12px;
+        padding: 10px 16px !important;
+    }
+    .navbar-default .navbar-text {
+        color: #000000;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    
+}
+
 .navbar-toggle{
     margin-top:  12px;
     padding: 10px 15px;
