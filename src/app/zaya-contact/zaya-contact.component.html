@@ -38,7 +38,7 @@
             </div>
           </a>
           <a class="list-group-item zaya-contact-group-item">
-            <h2 class="list-group-item-heading" style="text-align: center;">Zostan z nami</h2>
+            <h2 class="list-group-item-heading" style="text-align: center;">Zostań z nami</h2>
             <div class="zaya-contact-global-social">
               <a class="zaya-contact-social" href="https://www.facebook.com/Zaya-Projektowanie-Wn%C4%99trz-i-Ogrod%C3%B3w-593941440962918"
                 target="_blank">
@@ -98,10 +98,10 @@
         <div class="col-md-12" id="98ed138c-56af-424e-a9c9-82cd7e802219">
           <div class="form-group" id="ea0446bf-8622-4e65-b129-e4a01fc186eb">
             <input required minlength="3" maxlength="30" ngModel #subject="ngModel" name="subject" class="form-control input-lg" type="text"
-              placeholder="Wpisz temat wiadomośći" id="view_ce287ecb-b820-4498-a913-5d3d23206092">
+              placeholder="Wpisz temat wiadomości" id="view_ce287ecb-b820-4498-a913-5d3d23206092">
             <div class="alert alert-danger" *ngIf="subject.touched && !subject.valid">
               <div *ngIf="subject.errors.required">
-                Temat wiadomośći jest wymagany.
+                Temat wiadomości jest wymagany.
               </div>
               <div *ngIf="subject.errors.minlength">
                 Temat wiadomośći musi mieć {{ subject.errors.minlength.requiredLength }} znaki.
@@ -115,13 +115,13 @@
         <div class="col-md-12" id="16987d8b-e04b-4174-bee8-0e6899300f84">
           <div class="form-group" id="060a8e79-9c8c-485f-8876-7f7d83154058">
             <textarea required maxlength="500" ngModel #body="ngModel" name="body" class="form-control input-lg" rows="6" type="text"
-              placeholder="Wpisz treść wiadomośći" id="view_6cdd55ff-7d1e-44ac-bcec-d6efaedd576e"></textarea>
+              placeholder="Wpisz treść wiadomości" id="view_6cdd55ff-7d1e-44ac-bcec-d6efaedd576e"></textarea>
             <div class="alert alert-danger" *ngIf="body.touched && !body.valid">
               <div *ngIf="body.errors.required">
-                Treść wiadomośći jest wymagana.
+                Treść wiadomości jest wymagana.
               </div>
               <div *ngIf="body.errors.maxlength">
-                Temat wiadomośći nie może mieć więcęj niż {{ body.errors.maxlength.requiredLength }} znaków.
+                Temat wiadomości nie może mieć więcęj niż {{ body.errors.maxlength.requiredLength }} znaków.
               </div>
             </div>
           </div>
