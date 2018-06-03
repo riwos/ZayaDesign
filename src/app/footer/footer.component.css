@@ -1,5 +1,4 @@
 .footer-distributed {
-    position: absolute;
     background-color: #444444;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
@@ -7,71 +6,26 @@
     text-align: left;
     font: bold 16px;
     padding: 55px 50px;
-    /* margin-top: 30px; */
 }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right {
-    display: inline-block;
-    vertical-align: top;
+@media (max-width: 768px) {
+
+    .footer-distributed {
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
 
-/* Footer left */
-
-.footer-distributed .footer-left {
-    width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h3 {
-    color: rgba(195, 191, 10, 1);
-    font: normal 24px;
-    margin: 0;
-}
-
-.footer-distributed h3 span {
-    color: #5383d3;
-}
-
-.zaya-logo-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links {
-    color: #ffffff;
-    margin: 20px 0 12px;
-    padding: 0;
-}
-
-.footer-distributed .footer-links a {
-    display: inline-block;
-    line-height: 1.8;
-    text-decoration: none;
-    color: inherit;
-}
-
-.footer-distributed .footer-company-name {
-    color: #ffffff;
-    /* #8f9296; */
-    font-size: 16px;
-    font-weight: normal;
-    margin: 20px;
+.footer-text-center .footer-center p a{
     text-align: center;
+    color: #FFF;
+    text-decoration: none;
 }
 
-/* Footer Center */
-
-.footer-distributed .footer-center {
-    width: 32%;
-}
-
-.footer-distributed .footer-center i {
+.footer-center i {
     background-color: #33383b;
     color: #ffffff;
     font-size: 16px;
@@ -84,61 +38,31 @@
     vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope {
+.footer-center i.fa-envelope {
     font-size: 16px;
     line-height: 38px;
 }
 
-.footer-distributed .footer-center p {
+.footer-center p {
     display: inline-block;
     color: #ffffff;
     vertical-align: middle;
     margin: 0;
 }
 
-.footer-distributed .footer-center p span {
+.footer-center p span {
     display: block;
     font-weight: normal;
     font-size: 16px;
     line-height: 2;
 }
 
-.footer-distributed .footer-center p a {
+.footer-center p a {
     color: #ffffff;
-    /* #5383d3; */
     text-decoration: none;
-}
+} 
 
-
-/* Footer Right */
-
-.footer-distributed .footer-right {
-    width: 15%;
-}
-
-.footer-distributed .footer-company-about {
-    line-height: 20px;
-    color: #ffffff;
-    /* #92999f; */
-    font-size: 16px;
-    font-weight: normal;
-     margin: 0; 
-}
-
-.footer-distributed .footer-company-about span {
-    display: block;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons {
-    margin-top: 25px;
-    text-align: center;
-}
-
-.footer-distributed .footer-icons a {
+.footer-icons a {
     display: inline-block;
     width: 45px;
     height: 40px;
@@ -154,26 +78,9 @@
     padding: 4px;
 }
 
-@media (max-width: 880px) {
-
-    .footer-distributed {
-        font: bold 16px;
-        /*bottom: 0!important;
-        position: static;*/
-    }
-
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-center,
-    .footer-distributed .footer-right {
-        display: block;
-        width: 100%;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    .footer-distributed .footer-center i {
-        margin-left: 0;
-    }
+.footer-company-about {
+    color: #ffffff;
+    font-size: 16px;
 }
 
 .arrow-go-to-top.active {
