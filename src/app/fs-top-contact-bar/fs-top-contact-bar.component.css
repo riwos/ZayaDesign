@@ -14,6 +14,13 @@
     text-align: center;
 }
 
+.zaya-header-text-overview{
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
 .zaya-header-align-text{
     display: inline-block;
 }
@@ -24,4 +31,10 @@
      padding: 15px;
      font-size: 16px;
     font-weight: bold;
+}
+
+@media (max-width: 412px) {
+    .zaya-header-a, .zaya-header-a a:hover, .zaya-header-a a:focus {
+        font-size: 14px;
+   }
 }
