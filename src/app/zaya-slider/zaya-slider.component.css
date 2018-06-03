@@ -32,7 +32,7 @@
 @media (max-width: 1219px) and (min-width: 992px){
     .btn-responsive {
         padding:12px 24px;
-        border-radius: 30px 30px 30px 30px;
+        border-radius: 10px 10px 10px 10px;
         font-size: 24px;
       }
     .zaya-slider-h > p{
@@ -58,7 +58,7 @@
 @media (max-width: 991px) and (min-width: 768px){
     .btn-responsive {
         padding: 13px 25px;
-        border-radius: 30px 30px 30px 30px;
+        border-radius: 10px 10px 10px 10px;
         font-size: 18px;
     }
     .zaya-slider-h > p{
@@ -91,7 +91,7 @@
 @media (max-width: 767px){
     .btn-responsive {
         padding:12px 14px;
-        border-radius: 30px 30px 30px 30px;
+        border-radius: 10px 10px 10px 10px;
         font-size: 10px;
       }
       .zaya-slider-h > p{
