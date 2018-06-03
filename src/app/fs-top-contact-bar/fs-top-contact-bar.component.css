@@ -38,3 +38,9 @@
         font-size: 14px;
    }
 }
+
+@media (max-width: 320px) {
+    .zaya-header-a, .zaya-header-a a:hover, .zaya-header-a a:focus {
+        font-size: 13px;
+   }
+}
