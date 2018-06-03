@@ -91,6 +91,17 @@
     line-height: 1.75;
 }
 
+@media (max-width: 412px) {
+    .zaya-btn-primary-spacing {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .zaya-quote-wrap .zaya-quote-text {
+        font-size: 30px;
+    }
+}
+
 @media (min-width: 1800px){
     .blurb .blurb-title {
         margin-top: 20px;
@@ -115,6 +126,12 @@
     }
 }
 
+@media (min-width: 1200px){
+    .zaya-container{
+        width: 1260px;
+    }
+}
+
 .blurb .blurb-content {
     margin-top: 25px;
 }
@@ -124,3 +141,46 @@
     margin-left: auto;
     margin-right: auto; 
 }
+
+.zaya-header-company{
+    margin-top: -45px;
+    font-weight: 700;
+}
+
+.zaya-span-name-company{
+    color: #C3BF0A;
+}
+
+.zaya-quote-wrap-main {
+    float: left;
+    width: 100%;
+    padding: 60px 0 60px;
+    background: #c3bf0a;
+    text-align: center;
+    margin-top: -140px;
+    
+}
+
+.zaya-quote-wrap-main .zaya-quote-text-main {
+    float: left;
+    width: 100%;
+    color: white;
+    font-size: 45px;
+    font-family: Pacifico;
+}
+
+.zaya-main-text-p > p{
+    text-align: justify;
+    font-size: 18px;
+    /* line-height: 1.75; */
+}
+
+.zaya-main-text-option {
+    font-size: 16px;
+    line-height: 60px;
+}
+
+.zaya-main-mark-ok{
+    color: #C3BF0A;
+}
+
