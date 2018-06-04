@@ -1,3 +1,4 @@
+import { BaseComponent } from './../.common/zaya-base-component';
 import { PortfolioRequestContact } from './../.model/zaya-portfolio-request-contact';
 import { Component, OnInit } from '@angular/core';
 import { ZayaMapperService } from '../services/zaya-mapper.service';
@@ -9,11 +10,12 @@ import { ZayaHttpService } from '../services/zaya-http.service';
   templateUrl: './zaya-contact.component.html',
   styleUrls: ['./zaya-contact.component.css']
 })
-export class ZayaContactComponent{
+export class ZayaContactComponent extends BaseComponent{
   
   constructor(private apiCall : ZayaHttpService, 
     private zayaMapper : ZayaMapperService<PortfolioRequestContact>,
     private toastr: ToastrService){
+      super();
     
   }
 

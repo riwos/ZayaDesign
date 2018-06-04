@@ -1,3 +1,4 @@
+import { BaseComponent } from './../.common/zaya-base-component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './zaya-main-page.component.html',
   styleUrls: ['./zaya-main-page.component.css']
 })
-export class ZayaMainPageComponent implements OnInit {
+export class ZayaMainPageComponent extends BaseComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    super();
+   }
 
   ngOnInit() {
   }
