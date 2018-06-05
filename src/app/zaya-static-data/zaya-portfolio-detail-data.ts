@@ -14,7 +14,8 @@
                     "rootpath": "assets/test/",
                     "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"],
                     "imgthumb": ["ta.jpg", "tb.jpg", "tc.jpg", "td.jpg", "te.jpg", "tf.jpg", "tg.jpg", "th.jpg"]
-                }
+                },
+            "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecee nie ma co sie rozpisywac"
         }
     },
     {
@@ -32,7 +33,8 @@
                     "rootpath": "assets/test2/",
                     "imgnames": ["tht1.png", "tht2.jpg"],
                     "imgthumb": ["tht1a.png", "tht2b.jpg"]
-                }
+                },
+            "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
         }
     },
     {
@@ -50,7 +52,8 @@
                     "rootpath": "assets/test/",
                     "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"],
                     "imgthumb": ["ta.jpg", "tb.jpg", "tc.jpg", "td.jpg", "te.jpg", "tf.jpg", "tg.jpg", "th.jpg"]
-                }
+                },
+            "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
         }
     },
     {
@@ -69,6 +72,8 @@
                     "imgnames": ["tht2.jpg", "tht1.png"],
                     "imgthumb": ["tht2b.jpg", "tht1a.png"]
                 }
+                ,
+                "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
         }
     }
 

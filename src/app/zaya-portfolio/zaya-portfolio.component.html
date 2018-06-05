@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="col-lg-4 col-md-4 col-xs-6 thumb" *ngFor="let i of numberOfImages">
-            <a class="thumbnail" [routerLink]="[i + 1]"> 
+            <a class="thumbnail" [routerLink]="[i + 1]">
                 <img class="img-responsive " src="assets/images/portfolio{{i + 1}}.jpg" alt="100%x300" style="width: 100%;">
                 <div class="whiterectangle">
                     <div class="numbertext">
@@ -19,6 +19,10 @@
                     </div>
                 </div>
             </a>
+            <div class="caption">
+                    <h3>Title {{ i }}</h3>
+                    <p class="zaya-text-thumb">jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecee nie ma co sie rozpisywac</p>
+                </div>
         </div>
     </div>
 </div>

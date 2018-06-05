@@ -29,4 +29,6 @@ export class PortfolioDetailModel{
     Customer : string = undefined;
     @JsonProperty("jobtime", DateConverter)
     JobTime: Date = undefined;
+    @JsonProperty("shortdescription", String)
+    ShortDescription: string = undefined
 }
