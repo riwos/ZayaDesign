@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ZayaNotFoundComponent } from './zaya-not-found.component';
+import { FSNotFoundComponent } from './fs-not-found.component';
 
-describe('ZayaNotFoundComponent', () => {
-  let component: ZayaNotFoundComponent;
-  let fixture: ComponentFixture<ZayaNotFoundComponent>;
+describe('FsNotFoundComponent', () => {
+  let component: FSNotFoundComponent;
+  let fixture: ComponentFixture<FSNotFoundComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ZayaNotFoundComponent ]
+      declarations: [ FSNotFoundComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ZayaNotFoundComponent);
+    fixture = TestBed.createComponent(FSNotFoundComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

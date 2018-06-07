@@ -1,0 +1,40 @@
+.dagnes-wrap-404 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 115px 0;
+    background-color: #F7F8FA;
+}
+
+.dagnes-container-404 .dagnes-huge-text {
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: #c3bf0a;
+    font-size: 365px;
+    line-height: 365px;
+    font-weight: bold;
+}
+
+.dagnes-center-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .dagnes-wrap-404 {
+        float: left;
+        width: 100%;
+        text-align: center;
+        padding: 55px 0;
+    }
+    
+    .dagnes-container-404 .dagnes-huge-text {
+        margin-top: 0; 
+        margin-bottom: 40px;
+        color: #c3bf0a;
+        font-size: 165px;
+        line-height: 165px;
+        font-weight: bold;
+    }
+}

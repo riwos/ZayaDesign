@@ -1,12 +1,12 @@
+import { ZayaPortfolioDetailComponent } from './zaya-portfolio-detail/zaya-portfolio-detail.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, Component } from '@angular/core';
+import { NgModule, Component, NO_ERRORS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { ZayaHeaderComponent } from './zaya-header/zaya-header.component';
 import { ZayaSliderComponent } from './zaya-slider/zaya-slider.component';
 import { ZayaPortfolioComponent } from './zaya-portfolio/zaya-portfolio.component';
-import { ZayaNotFoundComponent } from './zaya-not-found/zaya-not-found.component';
 import { ZayaMainPageComponent } from './zaya-main-page/zaya-main-page.component';
 import { ZayaContactComponent } from './zaya-contact/zaya-contact.component';
 import { ZayaScopeComponent } from './zaya-scope/zaya-scope.component';
@@ -24,6 +24,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule, ToastNoAnimation, ToastNoAnimationModule } from 'ngx-toastr';
 import {GoTopButtonModule} from 'ng2-go-top-button';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FSTopContactBarComponent } from './fs-top-contact-bar/fs-top-contact-bar.component';
+import { FSOwnerAppComponent } from './fs-owner-app/fs-owner-app.component';
+import { FSCookiesPrivacyPoliceComponent } from './fs-cookies-privacy-police/fs-cookies-privacy-police.component';
+import { FSNotFoundComponent } from './fs-not-found/fs-not-found.component';
 
 @NgModule({
   declarations: [
@@ -33,11 +37,15 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     ZayaSliderComponent,
     ZayaMainPageComponent,
     ZayaPortfolioComponent,
-    ZayaNotFoundComponent,
     ZayaContactComponent,
     ZayaScopeComponent,
     ZayaAboutComponent,
-    ZayaPortfolioDetail2Component
+    ZayaPortfolioDetail2Component,
+    ZayaPortfolioDetailComponent,
+    FSTopContactBarComponent,
+    FSOwnerAppComponent,
+    FSCookiesPrivacyPoliceComponent,
+    FSNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +56,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
       { path: 'portfolio', component: ZayaPortfolioComponent},
       { path: 'contact', component: ZayaContactComponent},
       { path: 'about', component: ZayaAboutComponent},
-      { path: '**', component: ZayaNotFoundComponent }
+      { path: 'policy/:id', component: FSCookiesPrivacyPoliceComponent },
+      { path: '**', component: FSNotFoundComponent }
       ]),
       ScrollToModule.forRoot(),
       MomentModule,
@@ -63,6 +72,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
       GoTopButtonModule,
       BrowserAnimationsModule
   ],
+  schemas: [NO_ERRORS_SCHEMA],
   providers: [
     ZayaPortfolioDetailService, 
     ZayaMapperService,
