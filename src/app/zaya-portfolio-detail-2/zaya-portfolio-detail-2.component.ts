@@ -1,3 +1,4 @@
+import { BaseComponent } from './../.common/zaya-base-component';
 import { PortfolioDetailModel } from './../.model/zaya-portfolio-detail-model';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { Component, OnInit } from '@angular/core';
@@ -11,7 +12,7 @@ import { ZayaMapperService } from '../services/zaya-mapper.service';
   templateUrl: './zaya-portfolio-detail-2.component.html',
   styleUrls: ['./zaya-portfolio-detail-2.component.css']
 })
-export class ZayaPortfolioDetail2Component implements OnInit {
+export class ZayaPortfolioDetail2Component extends BaseComponent implements OnInit {
 
    arrayOfPathsLargeImages: Array<string> = null;
    arrayOfPathsThumbnailsImages: Array<string> = null;
@@ -21,6 +22,7 @@ export class ZayaPortfolioDetail2Component implements OnInit {
 
   constructor(private portFolioService: ZayaPortfolioDetailService, private route: ActivatedRoute,
               private zayaMapper : ZayaMapperService<PortfolioDetailModel>) {
+                super();
     this._detailPortfolio = new PortfolioDetailModel();
   }
 
@@ -32,6 +34,8 @@ export class ZayaPortfolioDetail2Component implements OnInit {
       this.nextLink = param == this.portFolioService.getCountOfImages() ? param : (param + 1);
       this.arrayOfPathsLargeImages = this.portFolioService.getPathForLargeImages(param);
       this.arrayOfPathsThumbnailsImages = this.portFolioService.getPathForThumbnails(param);
+      this.goToUpScroll();
+
     });
   }
 }
