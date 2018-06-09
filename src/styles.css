@@ -113,3 +113,9 @@
     font-weight: 700;
     font-size: 30px;
 }
+
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #c3bf0a !important;
+    font-weight: 600;
+}
