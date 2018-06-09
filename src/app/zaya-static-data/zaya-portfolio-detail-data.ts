@@ -9,36 +9,17 @@
             "area": 234,
             "jobrequirement": "Garden care, Removal, Cuting.v.v...",
             "jobtime": "2018-03-30T14:50:41+00:00",
-            "customer": "Ania i Tomek K.",
+            "customer": "Mgda i Artur",
             "images": {
-                    "rootpath": "assets/test/",
-                    "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"],
-                    "imgthumb": ["ta.jpg", "tb.jpg", "tc.jpg", "td.jpg", "te.jpg", "tf.jpg", "tg.jpg", "th.jpg"]
+                    "rootpath": "assets/magda-ogrod/",
+                    "imgnames": ["m1.jpg", "m2.jpg", "m3.jpg", "m4.jpg", "m5.jpg", "m6.jpg", "m7.jpg", "m8.jpg", "m9.jpg", "m10.jpg"],
+                    "imgthumb": ["tm1.jpg", "tm2.jpg", "tm3.jpg", "tm4.jpg", "m5.jpg", "tm6.jpg", "tm7.jpg", "tm8.jpg", "tm9.jpg", "tm10.jpg"]
                 },
             "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecee nie ma co sie rozpisywac"
         }
     },
     {
         name: 2,
-        model: {
-            "title": "T22222",
-            "introduce": "T22222",
-            "process": "T222222",
-            "location": "T2222222222222",
-            "area": 2222,
-            "jobrequirement": "qwe222222222222222",
-            "jobtime": new Date(),
-            "customer": "Jakub K.",
-            "images": {
-                    "rootpath": "assets/test2/",
-                    "imgnames": ["tht1.png", "tht2.jpg"],
-                    "imgthumb": ["tht1a.png", "tht2b.jpg"]
-                },
-            "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
-        }
-    },
-    {
-        name: 3,
         model: {
             "title": "T333333333",
             "introduce": "T33333333",
@@ -52,6 +33,25 @@
                     "rootpath": "assets/test/",
                     "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"],
                     "imgthumb": ["ta.jpg", "tb.jpg", "tc.jpg", "td.jpg", "te.jpg", "tf.jpg", "tg.jpg", "th.jpg"]
+                },
+            "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
+        }
+    },
+    {
+        name: 3,
+        model: {
+            "title": "T22222",
+            "introduce": "T22222",
+            "process": "T222222",
+            "location": "T2222222222222",
+            "area": 2222,
+            "jobrequirement": "qwe222222222222222",
+            "jobtime": new Date(),
+            "customer": "Jakub K.",
+            "images": {
+                    "rootpath": "assets/test2/",
+                    "imgnames": ["tht1.png", "tht2.jpg"],
+                    "imgthumb": ["tht1a.png", "tht2b.jpg"]
                 },
             "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
         }
