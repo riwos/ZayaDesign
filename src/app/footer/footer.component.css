@@ -17,6 +17,14 @@
         width: 100%;
         text-align: center;
     }
+
+    .fs-footer-margin-bottom{
+        margin-bottom: 15px;
+    }
+    
+    .fs-footer-margin-top{
+        margin-top: 15px;
+    }
 }
 
 .footer-text-center .footer-center p a{
@@ -117,7 +125,6 @@
     opacity: 1 !important;
     border: 1px solid #c3bf0a;
 }
-
 
 .fs-copyright {
     border-top: 1px solid #676767;

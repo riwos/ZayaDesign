@@ -1,0 +1,27 @@
+.fs-footer-cookie-privacy{
+    background: #444444;
+    padding: 30px 0px 10px 0px;
+    width: 100%;
+    color: white;
+    font-size: 12px;
+}
+
+.fs-footer-cookie-privacy > ul > li{
+    display: inline;
+    margin: 0 10px;
+}
+
+.fs-footer-cookie-privacy > h5{
+    font-size: 12px;
+}
+
+.fs-footer-cookie-privacy > ul > li > a{
+    color: white;
+}
+
+@media (max-width: 414px) {
+    .fs-footer-cookie-privacy > ul > li{
+        display: table-cell;
+        list-style-type: none;
+    }
+}

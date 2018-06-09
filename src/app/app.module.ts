@@ -28,6 +28,7 @@ import { FSTopContactBarComponent } from './fs-top-contact-bar/fs-top-contact-ba
 import { FSOwnerAppComponent } from './fs-owner-app/fs-owner-app.component';
 import { FSCookiesPrivacyPoliceComponent } from './fs-cookies-privacy-police/fs-cookies-privacy-police.component';
 import { FSNotFoundComponent } from './fs-not-found/fs-not-found.component';
+import { FsFooterCookiePrivacySocialComponent } from './fs-footer-cookie-privacy-social/fs-footer-cookie-privacy-social.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { FSNotFoundComponent } from './fs-not-found/fs-not-found.component';
     FSTopContactBarComponent,
     FSOwnerAppComponent,
     FSCookiesPrivacyPoliceComponent,
-    FSNotFoundComponent
+    FSNotFoundComponent,
+    FsFooterCookiePrivacySocialComponent
   ],
   imports: [
     BrowserModule,
