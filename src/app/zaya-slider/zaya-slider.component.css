@@ -31,9 +31,9 @@
 
 @media (max-width: 1219px) and (min-width: 992px){
     .btn-responsive {
-        padding:12px 24px;
+        padding:20px 60px;
         border-radius: 10px 10px 10px 10px;
-        font-size: 24px;
+        font-size: 18px;
       }
     .zaya-slider-h > p{
         z-index: 12;

@@ -91,8 +91,8 @@
 
 @media (max-width: 414px) {
     .zaya-btn-primary-spacing {
-        font-size: 12px;
-        margin-bottom: 15px;
+        font-size: 14px !important;
+        margin-bottom: 15px !important;
     }
     .zaya-quote-wrap .zaya-quote-text {
         font-size: 30px;
@@ -121,7 +121,7 @@
         margin-right: auto;
         margin-top: 20px;
         margin-bottom: 15px;
-        font-size: 12px;
+        font-size: 18px;
     }
     .zaya-img-main{
         margin-top: 20px;

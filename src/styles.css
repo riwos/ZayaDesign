@@ -19,6 +19,7 @@
 .btn, .btn-primary{
     border-radius: 10px 10px 10px 10px;
     padding: 20px 66px;
+    font-size: 24px;
 }
 
 .form-control.ng-touched.ng-invalid{
@@ -26,9 +27,9 @@
 }
 
 .btn, .btn-success,  .btn-success:active, .btn-success:visited, .btn-success:active[disabled], .btn-success[disabled]{
-    background-color: #444444;
-    border-color: #444444;
-    background-image: linear-gradient(to bottom,#444444 0,#444444 100%);
+    background-color: #419641;
+    border-color: #3e8f3e;
+    background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
     background-repeat: repeat-x;
     border-radius: 10px 10px 10px 10px;
     padding: 20px 66px;
@@ -36,18 +37,17 @@
 } 
 
 .btn-success:focus  {
-    background-color: #444444;
-    /* background-position: 0 -15px !important; */
+    background-color: #419641;
 }
 
 .btn-success:hover, .btn-success:active:hover, .btn-success:active:focus, .btn-success:active:visited, .btn-success:hover[disabled]{
-    background-color: #b6b6b6;
-    border-color: #b6b6b6;
-    background-image: linear-gradient(to bottom,#b6b6b6  0,#b6b6b6 100%);
+    background-color: #419641;
+    border-color: #3e8f3e;
+    background-image: linear-gradient(to bottom,#419641  0,#419641 100%);
 }
 
 .btn-success:hover, .btn-success[disabled]:hover {
-    background-color: #b6b6b6;
+    background-color: #419641;
     background-position: 0 -15px;
 }
 
@@ -102,6 +102,10 @@
     .zaya-quote-wrap-main .zaya-quote-text-main {
         font-size: 30px !important;
     }
+    .btn, .btn-success,  .btn-success:active, .btn-success:visited, .btn-success:active[disabled], .btn-success[disabled]{
+        font-size: 20px;
+    }
+    
 }
 
 .zaya-text-center{
