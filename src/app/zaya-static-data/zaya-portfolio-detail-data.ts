@@ -9,7 +9,7 @@
             "area": 234,
             "jobrequirement": "Garden care, Removal, Cuting.v.v...",
             "jobtime": "2018-03-30T14:50:41+00:00",
-            "customer": "Mgda i Artur",
+            "customer": "Magda i Artur",
             "images": {
                     "rootpath": "assets/magda-ogrod/",
                     "imgnames": ["m1.jpg", "m2.jpg", "m3.jpg", "m4.jpg", "m5.jpg", "m6.jpg", "m7.jpg", "m8.jpg", "m9.jpg", "m10.jpg"],
@@ -40,18 +40,18 @@
     {
         name: 3,
         model: {
-            "title": "T22222",
+            "title": "Łazienka",
             "introduce": "T22222",
             "process": "T222222",
-            "location": "T2222222222222",
-            "area": 2222,
+            "location": "Wrocław",
+            "area": 5,
             "jobrequirement": "qwe222222222222222",
             "jobtime": new Date(),
-            "customer": "Jakub K.",
+            "customer": "Krzystof i Beata",
             "images": {
-                    "rootpath": "assets/test2/",
-                    "imgnames": ["tht1.png", "tht2.jpg"],
-                    "imgthumb": ["tht1a.png", "tht2b.jpg"]
+                    "rootpath": "assets/krzysiu-beata-lazienka/",
+                    "imgnames": ["1kb.jpg", "2kb.jpg", "3kb.jpg", "4kb.jpg", "5kb.jpg", "6kb.jpg", "7kb.jpg", "8kb.jpg", "9kb.jpg"],
+                    "imgthumb": ["t1kb.jpg", "t2kb.jpg", "t3kb.jpg", "t4kb.jpg", "t5kb.jpg", "t6kb.jpg", "t7kb.jpg", "t8kb.jpg", "t9kb.jpg"]
                 },
             "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
         }
