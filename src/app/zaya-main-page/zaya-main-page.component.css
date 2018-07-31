@@ -36,18 +36,17 @@
     display: block;
     font-size: 16px;
     line-height: 1.75;
+    text-align: justify;
 }
 
 
 .zaya-section {
     position: relative;
-    display: block;
     padding: 80px 0;
 }
 
 .zaya-section-1 {
     position: relative;
-    display: block;
     padding: 80px 0;
 }
 
@@ -71,12 +70,6 @@
     padding-bottom: 40px;
 }
 
-@media (max-width: 800px) {
-    .col-md-4{
-        padding-bottom: 40px;
-    }
-}
-
 .zaya-motto{
     font-weight: 600;
     padding-bottom:  0px;
@@ -88,6 +81,26 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 1.75;
+}
+
+@media (max-width: 800px) {
+    .col-md-4{
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 414px) {
+    .zaya-btn-primary-spacing {
+        font-size: 14px !important;
+        margin-bottom: 15px !important;
+    }
+    .zaya-quote-wrap .zaya-quote-text {
+        font-size: 30px;
+    }
+    .zaya-main-text-option {
+        font-size: 15px !important;
+        line-height: 40px !important;
+    }
 }
 
 @media (min-width: 1800px){
@@ -104,13 +117,21 @@
 
 @media (max-width: 1200px){
     .zaya-btn-primary-spacing {
-        display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 18px;
     }
     .zaya-img-main{
         margin-top: 20px;
+    }
+    
+}
+
+@media (min-width: 1200px){
+    .zaya-container{
+        width: 1260px;
     }
 }
 
@@ -123,3 +144,46 @@
     margin-left: auto;
     margin-right: auto; 
 }
+
+.zaya-header-company{
+    margin-top: -45px;
+    font-weight: 700;
+}
+
+.zaya-span-name-company{
+    color: #C3BF0A;
+}
+
+.zaya-quote-wrap-main {
+    float: left;
+    width: 100%;
+    padding: 60px 0 60px;
+    background: #c3bf0a;
+    text-align: center;
+    margin-top: -140px;
+    
+}
+
+.zaya-quote-wrap-main .zaya-quote-text-main {
+    float: left;
+    width: 100%;
+    color: white;
+    font-size: 45px;
+    font-family: Pacifico;
+}
+
+.zaya-main-text-p > p{
+    text-align: justify;
+    font-size: 18px;
+    /* line-height: 1.75; */
+}
+
+.zaya-main-text-option {
+    font-size: 16px;
+    line-height: 80px;
+}
+
+.zaya-main-mark-ok{
+    color: #C3BF0A;
+}
+

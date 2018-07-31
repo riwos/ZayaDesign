@@ -1,6 +1,7 @@
 <header>
+    <app-fs-top-contact-bar></app-fs-top-contact-bar>
     <!-- Navbar fixed top -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-top: 40px;">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -9,28 +10,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" routerLink="/home">
-                    <img alt="Brand" class="zaya-logo" src="assets/images/logo2.svg" width="100px" height="60px">
+                <a class="navbar-brand" routerLink="/home" (click)="onMenuClick()">
+                    <img alt="Brand" class="zaya-logo" src="assets/images/logo3.svg" width="100px" height="60px">
                 </a>
-                <p class="navbar-text">Projektowanie Domów i Ogrodów</p>
+                <p class="navbar-text">Projektowanie Wnętrz i Ogrodów</p>
             </div>
             <div class="navbar-collapse collapse">
                 <!-- Left nav -->
                 <ul class="nav navbar-nav pull-right">
                     <li>
-                        <a class="active" routerLink="/home" routerLinkActive="active">Strona Główna</a>
+                        <a class="active" routerLink="/home" routerLinkActive="active" (click)="onMenuClick()">STRONA GŁÓWNA</a>
                     </li>
                     <li>
-                        <a routerLink="/portfolio" routerLinkActive="active">Projekty</a>
+                        <a routerLink="/portfolio" routerLinkActive="active" (click)="onMenuClick()">PROJEKTY</a>
                     </li>
                     <li>
-                        <a routerLink="/about" routerLinkActive="active">Kim Jestem</a>
-                    </li>
-                    <!-- <li>
-                        <a href="#">About</a>
-                    </li> -->
-                    <li>
-                        <a routerLink="/contact" routerLinkActive="active">Kontakt</a>
+                        <a routerLink="/contact" routerLinkActive="active" (click)="onMenuClick()">KONTAKT</a>
                     </li>
                 </ul>
 

@@ -1,0 +1,32 @@
+.fs-policy-cookie-font{
+    font-size: 18px;
+    line-height: 1.75;
+    text-align: justify;
+}
+
+.fs-font-cookie-panel-header{
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 15px;
+    line-height: 1.75;
+    font-weight: 600;
+}
+
+.fs-text-circle{
+    display: initial;
+    margin-left: 10px;
+}
+
+.fs-wrap-policy{
+    word-wrap: break-word;
+}
+
+.fs-lock-color-icon, .fs-policy-cookie-color-text{
+    color: #c3bf0a;
+}
+
+.fs-lock-cookie-margin{
+    margin-top: 15px;
+}
+
+

@@ -1,64 +1,54 @@
 <footer class="footer-distributed">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
+                <img class="zaya-logo-img fs-footer-margin-bottom" src="assets/images/logo3.svg" alt="ZAYA Logo" />
+            </div>
+            <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
+                <div class="footer-text-center footer-center fs-footer-margin-top">
+                    <div>
+                        <i class="fas fa-map-marker"></i>
+                        <p>
+                            <span>Cynamonowa 2</span> Jelenia Góra 58-560, Poland
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <p>+48 512 722 365</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <p>
+                            <a href="mailto:contact@zaya.com">contact@zaya.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                <div class="footer-company-about fs-footer-margin-top">
+                    <p>
+                        <span>About the company</span>
+                    </p>
+                    <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. </p>
+                    <p>Fusce euismod convallis velit,</p>
+                    <p> eu auctor lacus vehicula sit amet.</p>
+                </div>
 
-  <div class="footer-left">
-
-      <!-- <h3>ZAYA Home and Gardening</h3> -->
-      <img class="zaya-logo-img" src="assets/images/logo2.svg" alt="ZAYA Logo" />      
-  </div>
-
-  <div class="footer-center">
-
-      <div>
-          <i class="fa fa-map-marker"></i>
-          <p>
-              <span>Pijarska 32</span> Jelenia Góra, Poland</p>
-      </div>
-
-      <div>
-          <i class="fa fa-phone"></i>
-          <p>+48 512 722 365</p>
-      </div>
-
-      <div>
-          <i class="fa fa-envelope"></i>
-          <p>
-              <a href="mailto:support@company.com">zayaproject@zayacontact.com</a>
-          </p>
-      </div>
-
-  </div>
-
-  <div class="footer-right">
-
-      <p class="footer-company-about">
-          <span>About the company</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-      </p>
-
-      <div class="footer-icons">
-
-          <a href="#">
-              <i class="fa fa-facebook"></i>
-          </a>
-          <a href="#">
-              <i class="fa fa-twitter"></i>
-          </a>
-          <a href="#">
-              <i class="fa fa-google-plus"></i>
-          </a>
-          <a href="#">
-              <i class="fa fa-instagram"></i>
-          </a>
-
-      </div>
-
-      <p class="footer-company-name zaya-home-gardening">ZAYA Projektowanie domów i ogrodów © {{ currentYear }}</p>
-
-  </div>
-
-  <div>
-    <a (click)="onEdit()" id="arrowTop" class="arrow-go-to-top fa fa-angle-up active"></a>
-  </div>
-  
-
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/Zaya-Projektowanie-Wn%C4%99trz-i-Ogrod%C3%B3w-593941440962918" target="_blank">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                    <a href="https://twitter.com/ZayaDesign" target="_blank">
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/zayadesignstudio/" target="_blank">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <go-top-button [animate]="true" [speed]="20" [acceleration]="5" [scrollDistance]="300" [classNames]="'arrow-go-to-top active'">
+        <i class="fa fa-angle-up"></i>
+    </go-top-button>
 </footer>

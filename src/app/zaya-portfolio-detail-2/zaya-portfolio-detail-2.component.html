@@ -1,0 +1,130 @@
+<div class="zaya-background-portfolio2-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-header">
+          <h1 style="text-align: center; font-family: Pacifico;">{{ _detailPortfolio.Customer }}</h1>
+        </div>
+        <div class="zaya-slider">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="item " [ngClass]="{'active': i == 0}" *ngFor="let image of arrayOfPathsLargeImages; index as i">
+                <img src="{{image}}">
+              </div>
+            </div>
+          </div>
+          <div class="clearfix">
+            <div id="thumbcarousel" class="carousel slide" data-interval="false">
+              <div class="carousel-inner">
+                <div class="item " [ngClass]="{'active': i == 0}" *ngFor="let thumb of arrayOfPathsThumbnailsImages; index as i">
+                  <div data-target="#carousel" [attr.data-slide-to]="t.index" class="thumb" *ngFor="let t of thumb; index as j">
+                    <img src="{{ t.thumb }}">
+                  </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
+                <i class="fas fa-angle-left fa-3x" style="font-size: 4em" aria-hidden="true"></i>
+              </a>
+              <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+                <i class="fas fa-angle-right" style="font-size: 4em" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row">
+      <article class="zaya-portfolio2-main">
+        <div class="col-md-6 col-xs-12">
+          <div class="page-header">
+            <h1>{{ _detailPortfolio.Title }}</h1>
+          </div>
+          <ul class="zaya-portfolio2-info zaya-portfolio2-sidebar col-6">
+            <li>
+              <h5 class="zaya-portfolio2-info-label zaya-portfolio2-info-h5">
+                Klient: </h5>
+              <p class="zaya-portfolio2-info-content">
+                  {{ _detailPortfolio.Customer }} </p>
+            </li>
+            <li>
+              <h5 class="zaya-portfolio2-info-label zaya-portfolio2-info-h5">
+                Lokalizacja: </h5>
+              <p class="zaya-portfolio2-info-content">
+                  {{ _detailPortfolio.Location }} </p>
+            </li>
+            <li>
+              <h5 class="zaya-portfolio2-info-label zaya-portfolio2-info-h5">
+                Powierzchnia: </h5>
+              <p class="zaya-portfolio2-info-content">
+                  {{ _detailPortfolio.Area }} m2 </p>
+            </li>
+            <li>
+              <h5 class="zaya-portfolio2-info-label zaya-portfolio2-info-h5">
+                Wymagania do pracy: </h5>
+              <p class="zaya-portfolio2-info-content">
+                {{ _detailPortfolio.JobRequirement }} </p>
+            </li>
+            <li>
+              <h5 class="zaya-portfolio2-info-label zaya-portfolio2-info-h5">
+                Czas wykonania: </h5>
+              <p class="zaya-portfolio2-info-content">
+                {{ _detailPortfolio.JobTime | amFromUtc | amDateFormat: 'YYYY-MM-DD' }} </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="page-header">
+            <h1>Cel do osiagniecia</h1>
+          </div>
+          <div class="zaya-portfolio2-content">
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+              its layout.
+              <br> Reducing the need for fossil fuel generation.</p>
+          </div>
+          <div class="zaya-portfolio2-content">
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+              its layout.
+              <br> Reducing the need for fossil fuel generation.</p>
+            <h4>Introduce Project</h4>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+              its layout. </p>
+            <h4>Implementation Process</h4>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+              its layout. </p>
+            <ul>
+              <li>It is a long established fact that a reader.</li>
+              <li>It is a long established fact that a reader</li>
+              <li>It is a long established fact that a reader</li>
+              <li>It is a long established fact that a reader</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+<div class="container">
+  <div class="zaya-portfolio2-pagination">
+      <div class="row">
+        <div class="prev-post col-md-5 col-sm-5 col-xs-12">
+          <a [routerLink]="['/portfolio', prevLink]">
+            <i class="fas fa-angle-left fa-2x"></i>
+            <span class="zaya-portfolio2-pagination-span">Poprzedni Projekt</span>
+          </a>
+        </div>
+        <div class="back-to-home col-md-2 col-sm-2 col-xs-12">
+          <a class="zaya-portfolio2-pagination-a" [routerLink]="['/portfolio']" title="Powrót do Projektów">
+            <i class="fas fa-th-large fa-2x"></i>
+          </a>
+        </div>
+        <div class="next-post col-md-5 col-sm-5 col-xs-12">
+          <a [routerLink]="['/portfolio', nextLink]" >
+            <span class="zaya-portfolio2-pagination-span">Następny Projekt</span>
+            <i class="fas fa-angle-right fa-2x"></i>
+          </a>
+        </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+.zaya-header-contact {
+    background: #C3BF0A;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin-top: -10px;
+}
+
+.zaya-header-text{
+     float: right;
+    text-align: center;
+}
+
+.zaya-header-text-overview{
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.zaya-header-align-text{
+    display: inline-block;
+}
+
+.zaya-header-a, .zaya-header-a a:hover, .zaya-header-a a:focus {
+     text-decoration: none;
+     color: white;
+     padding: 15px;
+     font-size: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 412px) {
+    .zaya-header-a, .zaya-header-a a:hover, .zaya-header-a a:focus {
+        font-size: 14px;
+   }
+}
+
+@media (max-width: 320px) {
+    .zaya-header-a, .zaya-header-a a:hover, .zaya-header-a a:focus {
+        font-size: 13px;
+   }
+}

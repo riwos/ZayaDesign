@@ -1,4 +1,4 @@
-<div class="container" style="padding: 50px">
+<div class="container">
   <div class="row">
     <div class="col-md-5">
       <div class="col-md-12">
@@ -9,58 +9,51 @@
         </div>
       </div>
       <div class="col-md-12">
-        <div class="form-group">
-          <p>Want to chat? We’d love to! We welcome all comments, inquiries, ideas, rhetorical questions, and knowledge sharing
-            opportunities. Do you want to get involved? We welcome all assistance and contributions.</p>
-          <p>
-            <b>Use the form below or email
-              <a href="mailto:zayaproject@zayasupport.com">zayaproject@zayasupport.com</a> with details.</b>
-          </p>
+        <div class="list-group">
+          <a class="list-group-item zaya-contact-group-item">
+            <i class="fas fa-envelope fa-3x" aria-hidden="true"></i>
+            <div class="zaya-contact-text">
+              <a class="zaya-mail-link" href="mailto:contact@zaya.com">
+                <b>contact@zaya.com </b>
+              </a>
+              <p class="list-group-item-text">Jesteśmy tutaj aby ci pomóc</p>
+            </div>
+          </a>
+          <a class="list-group-item zaya-contact-group-item">
+            <i class="fas fa-phone fa-3x" aria-hidden="true"></i>
+            <div class="zaya-contact-text">
+              <p class="list-group-item-text">
+                <a style="color: #C3BF0A; text-decoration: underline;" href="tel:512 722 365">
+                  <b>(+48) 512 722 365</b>
+                </a>
+              </p>
+              <p class="list-group-item-text">Pracujemy Pon-Pt od 9:00 do 17:30,</p>
+            </div>
+          </a>
+          <a class="list-group-item zaya-contact-group-item">
+            <i class="fas fa-map-marker fa-3x" aria-hidden="true"></i>
+            <div class="zaya-contact-text">
+              <p class="list-group-item-text">ul. Cynamonowa 2, Jelenia Góra</p>
+              <p class="list-group-item-text">58-560 Polska</p>
+            </div>
+          </a>
+          <a class="list-group-item zaya-contact-group-item">
+            <h2 class="list-group-item-heading" style="text-align: center;">Zostań z nami</h2>
+            <div class="zaya-contact-global-social">
+              <a class="zaya-contact-social" href="https://www.facebook.com/Zaya-Projektowanie-Wn%C4%99trz-i-Ogrod%C3%B3w-593941440962918"
+                target="_blank">
+                <i class="fab fa-facebook-square fa-3x" aria-hidden="true"></i>
+              </a>
+              <a class="zaya-contact-social" href="https://twitter.com/ZayaDesign" target="_blank">
+                <i class="fab fa-twitter-square fa-3x" aria-hidden="true"></i>
+              </a>
+              <a class="zaya-contact-social" href="https://www.instagram.com/zayadesignstudio/" target="_blank">
+                <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
+              </a>
+            </div>
+          </a>
         </div>
       </div>
-      <div class="col-md-1 col-xs-1">
-        <div class="form-group">
-          <div>
-            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-phone-square fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-11 col-xs-11">
-        <div class="form-group">
-          <div class="paddingForContact">
-            <p>Napisz do nas:
-              <a href="mailto:zayaproject@zayasupport.com">zayaproject@zayasupport.com</a>
-            </p>
-            <p>Zadzown do nas: +48 512 722 365</p>
-            <p>Przyjedz do nas : Pijarska 32 </p>
-            <p>Jelenia Góra 58-500</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-12 col-xs-12">
-        <div class="form-group">
-          <div class="page-header">
-            <h2>Zostan z nami</h2>
-          </div>
-          <div class="social">
-            <a href="#">
-              <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
     </div>
     <div class="col-md-7">
       <div class="col-md-12">
@@ -70,37 +63,82 @@
           </div>
         </div>
       </div>
-      <div id="a5bc3c77-8dc1-460a-b410-36e81b1db82e" class="col-md-12">
-        <div class="form-group" id="110b829e-9d43-48a6-a254-ce38d4edc598">
-          <input class="form-control" type="text" placeholder="Imię" id="view_a67ab3d3-6aaa-4b6c-ae88-3f70c183d8e7">
+      <form #sendMail="ngForm" (ngSubmit)="submit(sendMail)">
+        <div id="a5bc3c77-8dc1-460a-b410-36e81b1db82e" class="col-md-12">
+          <div class="form-group" id="110b829e-9d43-48a6-a254-ce38d4edc598">
+            <input required minlength="3" maxlength="20" ngModel #firstName="ngModel" name="firstName" class="form-control input-lg"
+              type="text" placeholder="Podaj Imię" id="view_a67ab3d3-6aaa-4b6c-ae88-3f70c183d8e7">
+            <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">
+              <div *ngIf="firstName.errors.required">
+                Twoje imię jest wymagane
+              </div>
+              <div *ngIf="firstName.errors.minlength">
+                Twoje imię musi mieć minimum {{ firstName.errors.minlength.requiredLength }} znaki.
+              </div>
+              <div *ngIf="firstName.errors.maxlength">
+                Twoje imię nie może mieć więcęj niż {{ firstName.errors.maxlength.actualLength }} znaków.
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-12" id="1057071a-3dd2-4af5-adf7-b637cc37ac6e">
-        <div class="form-group" id="0da3b85b-b9b0-4309-bb90-e7445d94b5ac">
-          <input class="form-control" type="text" placeholder="mail@example.com" id="view_0be14e80-4ea2-41bb-be89-81d54dcfb9a5">
+        <div class="col-md-12" id="1057071a-3dd2-4af5-adf7-b637cc37ac6e">
+          <div class="form-group" id="0da3b85b-b9b0-4309-bb90-e7445d94b5ac">
+            <input required ngModel #email="ngModel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$" name="email" class="form-control input-lg"
+              type="email" placeholder="Podaj swój mail" id="view_0be14e80-4ea2-41bb-be89-81d54dcfb9a5">
+            <div class="alert alert-danger" *ngIf="email.touched && !email.valid">
+              <div *ngIf="email.errors.required">
+                Twoje adres mailowy jest wymagany.
+              </div>
+              <div *ngIf="email.errors.pattern">
+                Twoje adres mailowy nie jest prawidłowo zbudowany. Prawidłowo zbudowany mail wygląda tak: nazwa@domena.com
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-12" id="98ed138c-56af-424e-a9c9-82cd7e802219">
-        <div class="form-group" id="ea0446bf-8622-4e65-b129-e4a01fc186eb">
-          <input class="form-control" type="text" placeholder="Temat wiadomosci" id="view_ce287ecb-b820-4498-a913-5d3d23206092">
+        <div class="col-md-12" id="98ed138c-56af-424e-a9c9-82cd7e802219">
+          <div class="form-group" id="ea0446bf-8622-4e65-b129-e4a01fc186eb">
+            <input required minlength="3" maxlength="30" ngModel #subject="ngModel" name="subject" class="form-control input-lg" type="text"
+              placeholder="Wpisz temat wiadomości" id="view_ce287ecb-b820-4498-a913-5d3d23206092">
+            <div class="alert alert-danger" *ngIf="subject.touched && !subject.valid">
+              <div *ngIf="subject.errors.required">
+                Temat wiadomości jest wymagany.
+              </div>
+              <div *ngIf="subject.errors.minlength">
+                Temat wiadomośći musi mieć {{ subject.errors.minlength.requiredLength }} znaki.
+              </div>
+              <div *ngIf="subject.errors.maxlength">
+                Temat wiadomośći nie może mieć więcęj niż {{ subject.errors.maxlength.requiredLength }} znaków.
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-12" id="16987d8b-e04b-4174-bee8-0e6899300f84">
-        <div class="form-group" id="060a8e79-9c8c-485f-8876-7f7d83154058">
-          <textarea class="form-control" rows="6" type="text" placeholder="Tresc wiadomosci" id="view_6cdd55ff-7d1e-44ac-bcec-d6efaedd576e"></textarea>
+        <div class="col-md-12" id="16987d8b-e04b-4174-bee8-0e6899300f84">
+          <div class="form-group" id="060a8e79-9c8c-485f-8876-7f7d83154058">
+            <textarea required maxlength="500" ngModel #body="ngModel" name="body" class="form-control input-lg" rows="6" type="text"
+              placeholder="Wpisz treść wiadomości" id="view_6cdd55ff-7d1e-44ac-bcec-d6efaedd576e"></textarea>
+            <div class="alert alert-danger" *ngIf="body.touched && !body.valid">
+              <div *ngIf="body.errors.required">
+                Treść wiadomości jest wymagana.
+              </div>
+              <div *ngIf="body.errors.maxlength">
+                Temat wiadomości nie może mieć więcęj niż {{ body.errors.maxlength.requiredLength }} znaków.
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-12 col-xs-12">
-        <div class="form-group">
-          <!-- Replace data-sitekey with your own one, generated at https://www.google.com/recaptcha/admin -->
-          <div class="g-recaptcha pull-right" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S"></div>
+        <div class="col-md-12 col-xs-12">
+          <div class="form-group">
+            <!-- Replace data-sitekey with your own one, generated at https://www.google.com/recaptcha/admin -->
+            <re-captcha class="pull-right" (resolved)="resolved($event)" ngModel #zayaRecaptcha="ngModel" name="zayaRecaptcha" required></re-captcha>
+          </div>
         </div>
-      </div>
-      <div class="col-md-12 col-xs-12">
-        <div class="form-group">
-          <input type="submit" class="btn btn-lg btn-success btn-send pull-right" style="margin-top: 15px;" value="Wyslij wiadomosc">
+        <div class="col-md-12 col-xs-12">
+          <div class="form-group">
+            <input type="submit" [disabled]="!sendMail.valid" class="btn btn-lg btn-success btn-send pull-right btn-responsive" style="margin-top: 15px; margin-bottom: 15px;"
+              value="Wyślij wiadomość">
+          </div>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </div>
