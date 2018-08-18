@@ -59,18 +59,18 @@
     {
         name: 4,
         model: {
-            "title": "T4444444444444",
-            "introduce": "T44444444444444",
-            "process": "T4444444444444",
-            "location": "T444444444444444",
+            "title": "Karpacz",
+            "introduce": "Karpacz",
+            "process": "Karpacz",
+            "location": "Karpacz",
             "area": 44444,
             "jobrequirement": "qwe444444444444444444444",
             "jobtime": new Date(),
-            "customer": "Krystyna K.",
+            "customer": "Karpacz W.",
             "images": {
-                    "rootpath": "assets/test2/",
-                    "imgnames": ["tht2.jpg", "tht1.png"],
-                    "imgthumb": ["tht2b.jpg", "tht1a.png"]
+                    "rootpath": "assets/zaya_karpacz/",
+                    "imgnames": ["1karpacz.jpg", "2karpacz.jpg", "3karpacz.jpg", "4karpacz.jpg", "5karpacz.jpg"],
+                    "imgthumb": ["t1karpacz.jpg", "t2karpacz.jpg", "t3karpacz.jpg", "t4karpacz.jpg", "t5karpacz.jpg"]
                 }
                 ,
                 "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
