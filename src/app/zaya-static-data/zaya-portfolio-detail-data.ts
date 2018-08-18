@@ -12,8 +12,8 @@
             "customer": "Magda i Artur",
             "images": {
                     "rootpath": "assets/magda-ogrod/",
-                    "imgnames": ["m1.jpg", "m2.jpg", "m3.jpg", "m4.jpg", "m5.jpg", "m6.jpg", "m7.jpg", "m8.jpg", "m9.jpg", "m10.jpg"],
-                    "imgthumb": ["tm1.jpg", "tm2.jpg", "tm3.jpg", "tm4.jpg", "m5.jpg", "tm6.jpg", "tm7.jpg", "tm8.jpg", "tm9.jpg", "tm10.jpg"]
+                    "imgnames": ["m1.jpg", "m2.jpg", "m3.jpg", "m4.jpg", "m5.jpg", "m6.jpg", "m7.jpg", "m8.jpg", "m9.jpg", "m10.jpg", "m11.jpg", "m12.jpg"],
+                    "imgthumb": ["tm1.jpg", "tm2.jpg", "tm3.jpg", "tm4.jpg", "m5.jpg", "tm6.jpg", "tm7.jpg", "tm8.jpg", "tm9.jpg", "tm10.jpg", "m11.jpg", "m12.jpg"]
                 },
             "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecee nie ma co sie rozpisywac"
         }
@@ -30,9 +30,9 @@
             "jobtime": "2015-06-21T11:50:41+00:00",
             "customer": "Zofia C.",
             "images": {
-                    "rootpath": "assets/test/",
-                    "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"],
-                    "imgthumb": ["ta.jpg", "tb.jpg", "tc.jpg", "td.jpg", "te.jpg", "tf.jpg", "tg.jpg", "th.jpg"]
+                    "rootpath": "assets/magda-ogrod_dodatki/",
+                    "imgnames": ["md1.jpg", "md2.jpg", "md3.jpg", "md4.jpg", "md5.jpg", "md6.jpg", "md7.jpg", "md8.jpg", "md9.jpg", "md10.jpg", "md11.jpg", "md12.jpg"],
+                    "imgthumb": ["tmd1.jpg", "tmd2.jpg", "tmd3.jpg", "tmd4.jpg", "md5.jpg", "tmd6.jpg", "tmd7.jpg", "tmd8.jpg", "tmd9.jpg", "tmd10.jpg", "md11.jpg", "md12.jpg"]
                 },
             "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
         }
