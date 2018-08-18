@@ -50,8 +50,8 @@
             "customer": "Krzystof i Beata",
             "images": {
                     "rootpath": "assets/krzysiu-beata-lazienka/",
-                    "imgnames": ["1kb.jpg", "2kb.jpg", "3kb.jpg", "4kb.jpg", "5kb.jpg", "6kb.jpg", "7kb.jpg", "8kb.jpg", "9kb.jpg"],
-                    "imgthumb": ["t1kb.jpg", "t2kb.jpg", "t3kb.jpg", "t4kb.jpg", "t5kb.jpg", "t6kb.jpg", "t7kb.jpg", "t8kb.jpg", "t9kb.jpg"]
+                    "imgnames": ["1kb.jpg", "2kb.jpg", "3kb.jpg", "4kb.jpg", "5kb.jpg", "6kb.jpg", "7kb.jpg", "8kb.jpg", "9kb.jpg", "10kb.jpg", "11kb.jpg"],
+                    "imgthumb": ["t1kb.jpg", "t2kb.jpg", "t3kb.jpg", "t4kb.jpg", "t5kb.jpg", "t6kb.jpg", "t7kb.jpg", "t8kb.jpg", "t9kb.jpg", "t10kb.jpg", "t10kb.jpg"]
                 },
             "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
         }
