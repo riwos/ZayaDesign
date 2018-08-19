@@ -12,8 +12,8 @@
             "customer": "Magda i Artur",
             "images": {
                     "rootpath": "assets/magda-ogrod/",
-                    "imgnames": ["m1.jpg", "m2.jpg", "m3.jpg", "m4.jpg", "m5.jpg", "m6.jpg", "m7.jpg", "m8.jpg", "m9.jpg", "m10.jpg"],
-                    "imgthumb": ["tm1.jpg", "tm2.jpg", "tm3.jpg", "tm4.jpg", "m5.jpg", "tm6.jpg", "tm7.jpg", "tm8.jpg", "tm9.jpg", "tm10.jpg"]
+                    "imgnames": ["m1.jpg", "m2.jpg", "m3.jpg", "m4.jpg", "m5.jpg", "m6.jpg", "m7.jpg", "m8.jpg", "m9.jpg", "m10.jpg", "m11.jpg", "m12.jpg"],
+                    "imgthumb": ["tm1.jpg", "tm2.jpg", "tm3.jpg", "tm4.jpg", "m5.jpg", "tm6.jpg", "tm7.jpg", "tm8.jpg", "tm9.jpg", "tm10.jpg", "m11.jpg", "m12.jpg"]
                 },
             "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecee nie ma co sie rozpisywac"
         }
@@ -30,9 +30,9 @@
             "jobtime": "2015-06-21T11:50:41+00:00",
             "customer": "Zofia C.",
             "images": {
-                    "rootpath": "assets/test/",
-                    "imgnames": ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg"],
-                    "imgthumb": ["ta.jpg", "tb.jpg", "tc.jpg", "td.jpg", "te.jpg", "tf.jpg", "tg.jpg", "th.jpg"]
+                    "rootpath": "assets/magda-ogrod_dodatki/",
+                    "imgnames": ["md1.jpg", "md2.jpg", "md3.jpg", "md4.jpg", "md5.jpg", "md6.jpg", "md7.jpg", "md8.jpg", "md9.jpg", "md10.jpg", "md11.jpg", "md12.jpg"],
+                    "imgthumb": ["tmd1.jpg", "tmd2.jpg", "tmd3.jpg", "tmd4.jpg", "md5.jpg", "tmd6.jpg", "tmd7.jpg", "tmd8.jpg", "tmd9.jpg", "tmd10.jpg", "md11.jpg", "md12.jpg"]
                 },
             "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
         }
@@ -50,8 +50,8 @@
             "customer": "Krzystof i Beata",
             "images": {
                     "rootpath": "assets/krzysiu-beata-lazienka/",
-                    "imgnames": ["1kb.jpg", "2kb.jpg", "3kb.jpg", "4kb.jpg", "5kb.jpg", "6kb.jpg", "7kb.jpg", "8kb.jpg", "9kb.jpg"],
-                    "imgthumb": ["t1kb.jpg", "t2kb.jpg", "t3kb.jpg", "t4kb.jpg", "t5kb.jpg", "t6kb.jpg", "t7kb.jpg", "t8kb.jpg", "t9kb.jpg"]
+                    "imgnames": ["1kb.jpg", "2kb.jpg", "3kb.jpg", "4kb.jpg", "5kb.jpg", "6kb.jpg", "7kb.jpg", "8kb.jpg", "9kb.jpg", "10kb.jpg", "11kb.jpg"],
+                    "imgthumb": ["t1kb.jpg", "t2kb.jpg", "t3kb.jpg", "t4kb.jpg", "t5kb.jpg", "t6kb.jpg", "t7kb.jpg", "t8kb.jpg", "t9kb.jpg", "t10kb.jpg", "t10kb.jpg"]
                 },
             "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
         }
@@ -59,18 +59,18 @@
     {
         name: 4,
         model: {
-            "title": "T4444444444444",
-            "introduce": "T44444444444444",
-            "process": "T4444444444444",
-            "location": "T444444444444444",
+            "title": "Karpacz",
+            "introduce": "Karpacz",
+            "process": "Karpacz",
+            "location": "Karpacz",
             "area": 44444,
             "jobrequirement": "qwe444444444444444444444",
             "jobtime": new Date(),
-            "customer": "Krystyna K.",
+            "customer": "Karpacz W.",
             "images": {
-                    "rootpath": "assets/test2/",
-                    "imgnames": ["tht2.jpg", "tht1.png"],
-                    "imgthumb": ["tht2b.jpg", "tht1a.png"]
+                    "rootpath": "assets/zaya_karpacz/",
+                    "imgnames": ["1karpacz.jpg", "2karpacz.jpg", "3karpacz.jpg", "4karpacz.jpg", "5karpacz.jpg"],
+                    "imgthumb": ["t1karpacz.jpg", "t2karpacz.jpg", "t3karpacz.jpg", "t4karpacz.jpg", "t5karpacz.jpg"]
                 }
                 ,
                 "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
