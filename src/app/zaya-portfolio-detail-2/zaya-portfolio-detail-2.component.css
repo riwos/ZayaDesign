@@ -89,6 +89,7 @@
 
 .zaya-portfolio2-info li .zaya-portfolio2-info-content {
     text-transform: none !important;
+    word-wrap: break-word;
 }
 
 .zaya-portfolio2-info li h5.zaya-portfolio2-info-label, .zaya-portfolio2-info li .zaya-portfolio2-info-content {
