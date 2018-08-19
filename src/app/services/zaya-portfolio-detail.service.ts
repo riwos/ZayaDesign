@@ -16,6 +16,10 @@ export class ZayaPortfolioDetailService {
     return this.GetFoundArrayObject().model;
   }
 
+  getCountOfImagesInCurrentGallery(){
+    return this.GetFoundArrayObject().model.images.imgnames.length;
+  }
+
   getPathForLargeImages(name: number): Array<string> {
     
     let resultArray = new Array(),
@@ -43,12 +47,12 @@ export class ZayaPortfolioDetailService {
     return resultArray;
   }
 
-  getCountOfImages(): number {
+  getSumOfGalleries(): number {
     return this.dataToRead.length;
   }
 
   private GetFoundArrayObject() {
-    return this.foundArrayObject
+    return this.foundArrayObject;
   }
 
   private SetFoundArrayObject(value) {

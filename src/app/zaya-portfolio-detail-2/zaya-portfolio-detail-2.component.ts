@@ -19,6 +19,7 @@ export class ZayaPortfolioDetail2Component extends BaseComponent implements OnIn
    nextLink = 0;
    prevLink = 0;
    _detailPortfolio: PortfolioDetailModel = null;
+   isShowArrows: boolean = false;
 
   constructor(private portFolioService: ZayaPortfolioDetailService, private route: ActivatedRoute,
               private zayaMapper : ZayaMapperService<PortfolioDetailModel>) {
@@ -31,9 +32,10 @@ export class ZayaPortfolioDetail2Component extends BaseComponent implements OnIn
       let param = +params.get('id');
       this.prevLink = param == 1 ? param : (param - 1);
       this._detailPortfolio = this.zayaMapper.MapToObject(this.portFolioService.getDataForModel(param), PortfolioDetailModel);
-      this.nextLink = param == this.portFolioService.getCountOfImages() ? param : (param + 1);
+      this.nextLink = param == this.portFolioService.getSumOfGalleries() ? param : (param + 1);
       this.arrayOfPathsLargeImages = this.portFolioService.getPathForLargeImages(param);
       this.arrayOfPathsThumbnailsImages = this.portFolioService.getPathForThumbnails(param);
+      this.isShowArrows = this.portFolioService.getCountOfImagesInCurrentGallery() == 5;
       this.goToUpScroll();
 
     });

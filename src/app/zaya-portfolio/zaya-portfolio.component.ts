@@ -15,7 +15,7 @@ export class ZayaPortfolioComponent extends BaseComponent implements OnInit {
 
   constructor(private portFolioService: ZayaPortfolioDetailService) {
     super();
-    this.numberOfImages = Array.from(Array(portFolioService.getCountOfImages()), (x, i) => i);
+    this.numberOfImages = Array.from(Array(portFolioService.getSumOfGalleries()), (x, i) => i);
   }
 
   ngOnInit() {
