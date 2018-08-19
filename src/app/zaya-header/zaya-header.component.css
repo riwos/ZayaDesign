@@ -12,6 +12,7 @@
     color: #000000;
     font-weight: bold;
     margin-top: 30px;
+    font-size: 18px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -24,6 +25,16 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 768px) {
+    .navbar-text {
+        float: left;
+        margin-right: 15px;
+        margin-left: 15px;
+        word-wrap: break-word;
+        width: 150px; 
+    }
+}
+
 @media (min-width: 767px) {
     .navbar-nav > li > a{
         padding-top: 25px;
@@ -32,9 +43,34 @@
     .navbar-nav {
         margin: 5px;
     }
+    .navbar-text {
+        float: left;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
 }
 
-@media (max-width: 412px) {
+@media (min-width: 1200px) {
+    .navbar-text {
+        float: left;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 411px) and (max-width: 414px) {
+    .navbar-brand {
+        padding: 0 15px;
+    }
+    .navbar-default .navbar-text {
+        color: #000000;
+        font-weight: bold;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 410px) {
     .navbar-toggle{
         margin-top:  12px;
         padding: 10px 16px !important;
@@ -43,8 +79,11 @@
         color: #000000;
         font-weight: bold;
         margin-top: 15px;
+        font-size: 14px;
     }
-    
+    .navbar-brand {
+        padding: 0 10px;
+    }
 }
 
 .navbar-toggle{
