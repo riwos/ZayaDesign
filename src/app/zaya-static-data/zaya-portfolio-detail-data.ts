@@ -2,12 +2,12 @@
     {
         name: 1,
         model: {
-            "title": "T11",
+            "title": "Niech zieleń stanowi osłonę",
             "introduce": "T111",
             "process": "T11111",
-            "location": "T11111",
-            "area": 234,
-            "jobrequirement": "Garden care, Removal, Cuting.v.v...",
+            "location": "Jelenia Góra",
+            "area": 700,
+            "jobrequirement": "Niech zieleń stanowi osłonę...",
             "jobtime": "2018-03-30T14:50:41+00:00",
             "customer": "Magda i Artur",
             "images": {
@@ -15,7 +15,19 @@
                     "imgnames": ["m1.jpg", "m2.jpg", "m3.jpg", "m4.jpg", "m5.jpg", "m6.jpg", "m7.jpg", "m8.jpg", "m9.jpg", "m10.jpg", "m11.jpg", "m12.jpg"],
                     "imgthumb": ["tm1.jpg", "tm2.jpg", "tm3.jpg", "tm4.jpg", "m5.jpg", "tm6.jpg", "tm7.jpg", "tm8.jpg", "tm9.jpg", "tm10.jpg", "m11.jpg", "m12.jpg"]
                 },
-            "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecee nie ma co sie rozpisywac"
+            "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecee nie ma co sie rozpisywac",
+            "fulldescription": `
+                <p>W ogrodzie zastosowano pasy gęstych nasadzeń w układzie piętrowym (z zastosowaniem
+                wyższych i niższych roślin) które będą doskonałą osłoną przedkurzem, hałasem, silnymi podmuchami wiatru i sąsiadami. </p>
+                <p>Rośliny zimozielone (thuja szmaragd) zapewnia całoroczną ochronę i dekoracyjny wygląd ogrodu
+                które poza formowaniem i odpowiednim nawożeniem nie sprawiają dużo kłopotów. Piętrowe nasadzenia roślin (magnolie, kosodrzewina, róże, hortensje, lawenda) w kilku kolorach
+                przewodnich cieszą ,,oko” przez cały rok. </p>
+                <p>W ogrodzie powstały rabaty z roślinami iglastymi (kosodrzewina, jałowiec, sosna, wrzos) ale nie
+                zabrakło w nim także kompozycji z roślin liściastych (magnolia, laurowiśnia, trzmielina) i kwitnących (róża, hortensja, lawenda). </p>
+                <p>Rabaty zostały pokryte agrotkaniną z filtrem UV, która zapobiega wzrostowi chwastów.
+                Agrotkanina została obsypana korą iglastą która sprzyja utrzymaniu wilgoci jak również zakwasza
+                glebę. Klomby zostały oddzielone od zielonej murawy trwałym obrzeżem z tworzywa sztucznego, dzięki któremu łatwo możemy skosić trawę bez uszkodzenia roślin.
+                Stworzona kompozycja sprawia, że ogród jest harmonijny, uporządkowany oraz łatwy w utrzymaniu.</p>`
         }
     },
     {
@@ -34,7 +46,8 @@
                     "imgnames": ["md1.jpg", "md2.jpg", "md3.jpg", "md4.jpg", "md5.jpg", "md6.jpg", "md7.jpg", "md8.jpg", "md9.jpg", "md10.jpg", "md11.jpg", "md12.jpg"],
                     "imgthumb": ["tmd1.jpg", "tmd2.jpg", "tmd3.jpg", "tmd4.jpg", "md5.jpg", "tmd6.jpg", "tmd7.jpg", "tmd8.jpg", "tmd9.jpg", "tmd10.jpg", "md11.jpg", "md12.jpg"]
                 },
-            "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
+            "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac",
+            "fulldescription": ""
         }
     },
     {
@@ -53,7 +66,8 @@
                     "imgnames": ["1kb.jpg", "2kb.jpg", "3kb.jpg", "4kb.jpg", "5kb.jpg", "6kb.jpg", "7kb.jpg", "8kb.jpg", "9kb.jpg", "10kb.jpg", "11kb.jpg"],
                     "imgthumb": ["t1kb.jpg", "t2kb.jpg", "t3kb.jpg", "t4kb.jpg", "t5kb.jpg", "t6kb.jpg", "t7kb.jpg", "t8kb.jpg", "t9kb.jpg", "t10kb.jpg", "t10kb.jpg"]
                 },
-            "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
+            "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac",
+            "fulldescription": ""
         }
     },
     {
@@ -73,7 +87,8 @@
                     "imgthumb": ["t1karpacz.jpg", "t2karpacz.jpg", "t3karpacz.jpg", "t4karpacz.jpg", "t5karpacz.jpg"]
                 }
                 ,
-                "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac"
+                "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac",
+                "fulldescription": ""
         }
     }
 
