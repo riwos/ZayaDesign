@@ -83,8 +83,33 @@
             "customer": "Karpacz W.",
             "images": {
                     "rootpath": "assets/zaya_karpacz/",
-                    "imgnames": ["1karpacz.jpg", "2karpacz.jpg", "3karpacz.jpg", "4karpacz.jpg", "5karpacz.jpg"],
-                    "imgthumb": ["t1karpacz.jpg", "t2karpacz.jpg", "t3karpacz.jpg", "t4karpacz.jpg", "t5karpacz.jpg"]
+                    "imgnames": ["1karpacz.jpg", "2karpacz.jpg", "4karpacz.jpg", "5karpacz.jpg"],
+                    "imgthumb": ["t1karpacz.jpg", "t2karpacz.jpg", "t4karpacz.jpg", "t5karpacz.jpg"]
+                }
+                ,
+                "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac",
+                "fulldescription": ""
+        }
+    },
+    {
+        name: 5,
+        model: {
+            "title": "Dziwiszow",
+            "introduce": "Dziwiszow",
+            "process": "Dziwiszow",
+            "location": "Dziwiszow",
+            "area": 22,
+            "jobrequirement": "qwe444444444444444444444",
+            "jobtime": new Date(),
+            "customer": "Dziwiszow W.",
+            "images": {
+                    "rootpath": "assets/zaya_dziwiszow/",
+                    "imgnames": ["1Dziwiszow.jpg", "2Dziwiszow.jpg", "3Dziwiszow.jpg", "4Dziwiszow.jpg", 
+                    "5Dziwiszow.jpg", "6Dziwiszow.jpg", "7Dziwiszow.jpg", "8Dziwiszow.jpg", "9Dziwiszow.jpg", "10Dziwiszow.jpg", 
+                    "11Dziwiszow.jpg"],
+                    "imgthumb": ["t1Dziwiszow.jpg", "t2Dziwiszow.jpg", "t3Dziwiszow.jpg", "t4Dziwiszow.jpg", 
+                    "t5Dziwiszow.jpg", "t6Dziwiszow.jpg", "t7Dziwiszow.jpg", "t8Dziwiszow.jpg", "t9Dziwiszow.jpg", "t10Dziwiszow.jpg", 
+                    "t11Dziwiszow.jpg"]
                 }
                 ,
                 "shortdescription": "jakis tam tekst o tym czego dotyczyl projekt w kilku zdaniach. 2-3 zdnia nie wiecje nie ma co sie rozpisywac",
