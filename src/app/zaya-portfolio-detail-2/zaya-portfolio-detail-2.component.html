@@ -44,7 +44,7 @@
           <div class="page-header">
             <h1>{{ _detailPortfolio.Title }}</h1>
           </div>
-          <ul class="zaya-portfolio2-info zaya-portfolio2-sidebar col-6">
+          <ul style="text-align: justify;font-size: 18px;" class="zaya-portfolio2-info zaya-portfolio2-sidebar col-6">
             <li>
               <h5 class="zaya-portfolio2-info-label zaya-portfolio2-info-h5">
                 Klient: </h5>
@@ -63,12 +63,12 @@
               <p class="zaya-portfolio2-info-content">
                   {{ _detailPortfolio.Area }} m2 </p>
             </li>
-            <li>
+            <!-- <li>
               <h5 class="zaya-portfolio2-info-label zaya-portfolio2-info-h5">
                 Wymagania do pracy: </h5>
               <p class="zaya-portfolio2-info-content">
                 {{ _detailPortfolio.JobRequirement }} </p>
-            </li>
+            </li> -->
             <li>
               <h5 class="zaya-portfolio2-info-label zaya-portfolio2-info-h5">
                 Czas wykonania: </h5>
@@ -81,12 +81,12 @@
           <div class="page-header">
             <h1>Cel do osiagniecia</h1>
           </div>
-          <div class="zaya-portfolio2-content">
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at
-              its layout.
-              <br> Reducing the need for fossil fuel generation.</p>
-          </div>
-          <div class="zaya-portfolio2-content">
+          <div style="text-align: justify;
+          font-size: 18px;" [innerHTML]="_detailPortfolio.FullDescription"></div>
+          <!-- <div class="zaya-portfolio2-content">
+            <p [innerHTML]=" _detailPortfolio.FullDescription  "> </p>
+          </div> -->
+          <!-- <div class="zaya-portfolio2-content">
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at
               its layout.
               <br> Reducing the need for fossil fuel generation.</p>
@@ -101,8 +101,8 @@
               <li>It is a long established fact that a reader</li>
               <li>It is a long established fact that a reader</li>
               <li>It is a long established fact that a reader</li>
-            </ul>
-          </div>
+            </ul> 
+          </div> -->
         </div>
       </article>
     </div>

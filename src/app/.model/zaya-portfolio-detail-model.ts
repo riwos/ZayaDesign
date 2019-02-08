@@ -31,4 +31,6 @@ export class PortfolioDetailModel{
     JobTime: Date = undefined;
     @JsonProperty("shortdescription", String)
     ShortDescription: string = undefined
+    @JsonProperty("fulldescription", String)
+    FullDescription: string = undefined
 }

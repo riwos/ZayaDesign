@@ -11,7 +11,7 @@
     "e2e": "ng e2e",
     "build-full-clean": "ng build -prod -aot -vc -cc -dop --buildOptimizer && workbox generateSW workbox-config.js",
     "publish github": "ngh --message='First SW v65' --branch=gh-pages",
-    "postinstall": "ng build --prod"
+    "postinstall": "ng build -prod -aot -vc -cc -dop --buildOptimizer"
   },
   "private": true,
   "dependencies": {
