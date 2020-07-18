@@ -12,8 +12,8 @@ export class FSCookiesPrivacyPoliceComponent extends BaseComponent implements On
   isShowCookie: boolean = false;
   isShowSocialMedia: boolean = false;
   isShowPrivacy: boolean = false;
-  wwwAddress = "www.zaya.pl";
-  wwwMail = "contact@zaya.com";
+  wwwAddress = "www.zayadesignstudio.pl";
+  wwwMail = "zayaprojekt@gmail.com";
   wwwName = "Zaya Projektowanie Ogrodów i Wnętrz";
 
   constructor(private route: ActivatedRoute) { super(); }
